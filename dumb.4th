@@ -1,0 +1,5 @@
+\ vim: set ft=forth:
+: DUMB BEGIN DUP 48 + EMIT CR 1- DUP 0= IF EXIT THEN AGAIN ;
+5 DUMB
+BYE
+

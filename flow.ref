@@ -1,0 +1,1230 @@
+_start: 0x0000000008049240, defined in core.asm[146]
+sizeof.Elf32_Sym: 0x0000000000000010, defined in include/elf.inc[14]
+sizeof.Elf32_Rel: 0x0000000000000008, defined in include/elf.inc[25]
+sizeof.Elf32_Rela: 0x000000000000000C, defined in include/elf.inc[37]
+sizeof.Elf64_Sym: 0x0000000000000018, defined in include/elf.inc[52]
+sizeof.Elf64_Rel: 0x0000000000000010, defined in include/elf.inc[63]
+sizeof.Elf64_Rela: 0x0000000000000018, defined in include/elf.inc[75]
+DT_NULL: 0x0000000000000000, defined in include/elf.inc[78]
+DT_NEEDED: 0x0000000000000001, defined in include/elf.inc[79]
+DT_HASH: 0x0000000000000004, defined in include/elf.inc[80]
+DT_STRTAB: 0x0000000000000005, defined in include/elf.inc[81]
+DT_SYMTAB: 0x0000000000000006, defined in include/elf.inc[82]
+DT_RELA: 0x0000000000000007, defined in include/elf.inc[83]
+DT_RELASZ: 0x0000000000000008, defined in include/elf.inc[84]
+DT_RELAENT: 0x0000000000000009, defined in include/elf.inc[85]
+DT_STRSZ: 0x000000000000000A, defined in include/elf.inc[86]
+DT_SYMENT: 0x000000000000000B, defined in include/elf.inc[87]
+DT_REL: 0x0000000000000011, defined in include/elf.inc[88]
+DT_RELSZ: 0x0000000000000012, defined in include/elf.inc[89]
+DT_RELENT: 0x0000000000000013, defined in include/elf.inc[90]
+STB_LOCAL: 0x0000000000000000, defined in include/elf.inc[92]
+STB_GLOBAL: 0x0000000000000001, defined in include/elf.inc[93]
+STB_WEAK: 0x0000000000000002, defined in include/elf.inc[94]
+STT_NOTYPE: 0x0000000000000000, defined in include/elf.inc[96]
+STT_OBJECT: 0x0000000000000001, defined in include/elf.inc[97]
+STT_FUNC: 0x0000000000000002, defined in include/elf.inc[98]
+STT_SECTION: 0x0000000000000003, defined in include/elf.inc[99]
+STT_FILE: 0x0000000000000004, defined in include/elf.inc[100]
+R_386_NONE: 0x0000000000000000, defined in include/elf.inc[102]
+R_386_32: 0x0000000000000001, defined in include/elf.inc[103]
+R_386_PC32: 0x0000000000000002, defined in include/elf.inc[104]
+R_386_GOT32: 0x0000000000000003, defined in include/elf.inc[105]
+R_386_PLT32: 0x0000000000000004, defined in include/elf.inc[106]
+R_386_COPY: 0x0000000000000005, defined in include/elf.inc[107]
+R_386_GLOB_DAT: 0x0000000000000006, defined in include/elf.inc[108]
+R_386_JMP_SLOT: 0x0000000000000007, defined in include/elf.inc[109]
+R_386_RELATIVE: 0x0000000000000008, defined in include/elf.inc[110]
+R_386_GOTOFF: 0x0000000000000009, defined in include/elf.inc[111]
+R_386_GOTPC: 0x000000000000000A, defined in include/elf.inc[112]
+R_X86_64_NONE: 0x0000000000000000, defined in include/elf.inc[114]
+R_X86_64_64: 0x0000000000000001, defined in include/elf.inc[115]
+R_X86_64_PC32: 0x0000000000000002, defined in include/elf.inc[116]
+R_X86_64_GOT32: 0x0000000000000003, defined in include/elf.inc[117]
+R_X86_64_PLT32: 0x0000000000000004, defined in include/elf.inc[118]
+R_X86_64_COPY: 0x0000000000000005, defined in include/elf.inc[119]
+R_X86_64_GLOB_DAT: 0x0000000000000006, defined in include/elf.inc[120]
+R_X86_64_JUMP_SLOT: 0x0000000000000007, defined in include/elf.inc[121]
+R_X86_64_RELATIVE: 0x0000000000000008, defined in include/elf.inc[122]
+R_X86_64_GOTPCREL: 0x0000000000000009, defined in include/elf.inc[123]
+R_X86_64_32: 0x000000000000000A, defined in include/elf.inc[124]
+R_X86_64_32S: 0x000000000000000B, defined in include/elf.inc[125]
+R_X86_64_16: 0x000000000000000C, defined in include/elf.inc[126]
+R_X86_64_PC16: 0x000000000000000D, defined in include/elf.inc[127]
+R_X86_64_8: 0x000000000000000E, defined in include/elf.inc[128]
+R_X86_64_PC8: 0x000000000000000F, defined in include/elf.inc[129]
+R_X86_64_DPTMOD64: 0x0000000000000010, defined in include/elf.inc[130]
+R_X86_64_DTPOFF64: 0x0000000000000011, defined in include/elf.inc[131]
+R_X86_64_TPOFF64: 0x0000000000000012, defined in include/elf.inc[132]
+R_X86_64_TLSGD: 0x0000000000000013, defined in include/elf.inc[133]
+R_X86_64_TLSLD: 0x0000000000000014, defined in include/elf.inc[134]
+R_X86_64_DTPOFF32: 0x0000000000000015, defined in include/elf.inc[135]
+R_X86_64_GOTTPOFF: 0x0000000000000016, defined in include/elf.inc[136]
+R_X86_64_TPOFF32: 0x0000000000000017, defined in include/elf.inc[137]
+R_X86_64_PC64: 0x0000000000000018, defined in include/elf.inc[138]
+R_X86_64_GOTOFF64: 0x0000000000000019, defined in include/elf.inc[139]
+R_X86_64_GOTPC32: 0x000000000000001A, defined in include/elf.inc[140]
+__NR_restart_syscall: 0x0000000000000000, defined in include/unistd-26.inc[4]
+__NR_exit: 0x0000000000000001, defined in include/unistd-26.inc[5]
+__NR_fork: 0x0000000000000002, defined in include/unistd-26.inc[6]
+__NR_read: 0x0000000000000003, defined in include/unistd-26.inc[7]
+__NR_write: 0x0000000000000004, defined in include/unistd-26.inc[8]
+__NR_open: 0x0000000000000005, defined in include/unistd-26.inc[9]
+__NR_close: 0x0000000000000006, defined in include/unistd-26.inc[10]
+__NR_waitpid: 0x0000000000000007, defined in include/unistd-26.inc[11]
+__NR_creat: 0x0000000000000008, defined in include/unistd-26.inc[12]
+__NR_link: 0x0000000000000009, defined in include/unistd-26.inc[13]
+__NR_unlink: 0x000000000000000A, defined in include/unistd-26.inc[14]
+__NR_execve: 0x000000000000000B, defined in include/unistd-26.inc[15]
+__NR_chdir: 0x000000000000000C, defined in include/unistd-26.inc[16]
+__NR_time: 0x000000000000000D, defined in include/unistd-26.inc[17]
+__NR_mknod: 0x000000000000000E, defined in include/unistd-26.inc[18]
+__NR_chmod: 0x000000000000000F, defined in include/unistd-26.inc[19]
+__NR_lchown: 0x0000000000000010, defined in include/unistd-26.inc[20]
+__NR_break: 0x0000000000000011, defined in include/unistd-26.inc[21]
+__NR_oldstat: 0x0000000000000012, defined in include/unistd-26.inc[22]
+__NR_lseek: 0x0000000000000013, defined in include/unistd-26.inc[23]
+__NR_getpid: 0x0000000000000014, defined in include/unistd-26.inc[24]
+__NR_mount: 0x0000000000000015, defined in include/unistd-26.inc[25]
+__NR_umount: 0x0000000000000016, defined in include/unistd-26.inc[26]
+__NR_setuid: 0x0000000000000017, defined in include/unistd-26.inc[27]
+__NR_getuid: 0x0000000000000018, defined in include/unistd-26.inc[28]
+__NR_stime: 0x0000000000000019, defined in include/unistd-26.inc[29]
+__NR_ptrace: 0x000000000000001A, defined in include/unistd-26.inc[30]
+__NR_alarm: 0x000000000000001B, defined in include/unistd-26.inc[31]
+__NR_oldfstat: 0x000000000000001C, defined in include/unistd-26.inc[32]
+__NR_pause: 0x000000000000001D, defined in include/unistd-26.inc[33]
+__NR_utime: 0x000000000000001E, defined in include/unistd-26.inc[34]
+__NR_stty: 0x000000000000001F, defined in include/unistd-26.inc[35]
+__NR_gtty: 0x0000000000000020, defined in include/unistd-26.inc[36]
+__NR_access: 0x0000000000000021, defined in include/unistd-26.inc[37]
+__NR_nice: 0x0000000000000022, defined in include/unistd-26.inc[38]
+__NR_ftime: 0x0000000000000023, defined in include/unistd-26.inc[39]
+__NR_sync: 0x0000000000000024, defined in include/unistd-26.inc[40]
+__NR_kill: 0x0000000000000025, defined in include/unistd-26.inc[41]
+__NR_rename: 0x0000000000000026, defined in include/unistd-26.inc[42]
+__NR_mkdir: 0x0000000000000027, defined in include/unistd-26.inc[43]
+__NR_rmdir: 0x0000000000000028, defined in include/unistd-26.inc[44]
+__NR_dup: 0x0000000000000029, defined in include/unistd-26.inc[45]
+__NR_pipe: 0x000000000000002A, defined in include/unistd-26.inc[46]
+__NR_times: 0x000000000000002B, defined in include/unistd-26.inc[47]
+__NR_prof: 0x000000000000002C, defined in include/unistd-26.inc[48]
+__NR_brk: 0x000000000000002D, defined in include/unistd-26.inc[49]
+__NR_setgid: 0x000000000000002E, defined in include/unistd-26.inc[50]
+__NR_getgid: 0x000000000000002F, defined in include/unistd-26.inc[51]
+__NR_signal: 0x0000000000000030, defined in include/unistd-26.inc[52]
+__NR_geteuid: 0x0000000000000031, defined in include/unistd-26.inc[53]
+__NR_getegid: 0x0000000000000032, defined in include/unistd-26.inc[54]
+__NR_acct: 0x0000000000000033, defined in include/unistd-26.inc[55]
+__NR_umount2: 0x0000000000000034, defined in include/unistd-26.inc[56]
+__NR_lock: 0x0000000000000035, defined in include/unistd-26.inc[57]
+__NR_ioctl: 0x0000000000000036, defined in include/unistd-26.inc[58]
+__NR_fcntl: 0x0000000000000037, defined in include/unistd-26.inc[59]
+__NR_mpx: 0x0000000000000038, defined in include/unistd-26.inc[60]
+__NR_setpgid: 0x0000000000000039, defined in include/unistd-26.inc[61]
+__NR_ulimit: 0x000000000000003A, defined in include/unistd-26.inc[62]
+__NR_oldolduname: 0x000000000000003B, defined in include/unistd-26.inc[63]
+__NR_umask: 0x000000000000003C, defined in include/unistd-26.inc[64]
+__NR_chroot: 0x000000000000003D, defined in include/unistd-26.inc[65]
+__NR_ustat: 0x000000000000003E, defined in include/unistd-26.inc[66]
+__NR_dup2: 0x000000000000003F, defined in include/unistd-26.inc[67]
+__NR_getppid: 0x0000000000000040, defined in include/unistd-26.inc[68]
+__NR_getpgrp: 0x0000000000000041, defined in include/unistd-26.inc[69]
+__NR_setsid: 0x0000000000000042, defined in include/unistd-26.inc[70]
+__NR_sigaction: 0x0000000000000043, defined in include/unistd-26.inc[71]
+__NR_sgetmask: 0x0000000000000044, defined in include/unistd-26.inc[72]
+__NR_ssetmask: 0x0000000000000045, defined in include/unistd-26.inc[73]
+__NR_setreuid: 0x0000000000000046, defined in include/unistd-26.inc[74]
+__NR_setregid: 0x0000000000000047, defined in include/unistd-26.inc[75]
+__NR_sigsuspend: 0x0000000000000048, defined in include/unistd-26.inc[76]
+__NR_sigpending: 0x0000000000000049, defined in include/unistd-26.inc[77]
+__NR_sethostname: 0x000000000000004A, defined in include/unistd-26.inc[78]
+__NR_setrlimit: 0x000000000000004B, defined in include/unistd-26.inc[79]
+__NR_getrlimit: 0x000000000000004C, defined in include/unistd-26.inc[80]
+__NR_getrusage: 0x000000000000004D, defined in include/unistd-26.inc[81]
+__NR_gettimeofday: 0x000000000000004E, defined in include/unistd-26.inc[82]
+__NR_settimeofday: 0x000000000000004F, defined in include/unistd-26.inc[83]
+__NR_getgroups: 0x0000000000000050, defined in include/unistd-26.inc[84]
+__NR_setgroups: 0x0000000000000051, defined in include/unistd-26.inc[85]
+__NR_select: 0x0000000000000052, defined in include/unistd-26.inc[86]
+__NR_symlink: 0x0000000000000053, defined in include/unistd-26.inc[87]
+__NR_oldlstat: 0x0000000000000054, defined in include/unistd-26.inc[88]
+__NR_readlink: 0x0000000000000055, defined in include/unistd-26.inc[89]
+__NR_uselib: 0x0000000000000056, defined in include/unistd-26.inc[90]
+__NR_swapon: 0x0000000000000057, defined in include/unistd-26.inc[91]
+__NR_reboot: 0x0000000000000058, defined in include/unistd-26.inc[92]
+__NR_readdir: 0x0000000000000059, defined in include/unistd-26.inc[93]
+__NR_mmap: 0x000000000000005A, defined in include/unistd-26.inc[94]
+__NR_munmap: 0x000000000000005B, defined in include/unistd-26.inc[95]
+__NR_truncate: 0x000000000000005C, defined in include/unistd-26.inc[96]
+__NR_ftruncate: 0x000000000000005D, defined in include/unistd-26.inc[97]
+__NR_fchmod: 0x000000000000005E, defined in include/unistd-26.inc[98]
+__NR_fchown: 0x000000000000005F, defined in include/unistd-26.inc[99]
+__NR_getpriority: 0x0000000000000060, defined in include/unistd-26.inc[100]
+__NR_setpriority: 0x0000000000000061, defined in include/unistd-26.inc[101]
+__NR_profil: 0x0000000000000062, defined in include/unistd-26.inc[102]
+__NR_statfs: 0x0000000000000063, defined in include/unistd-26.inc[103]
+__NR_fstatfs: 0x0000000000000064, defined in include/unistd-26.inc[104]
+__NR_ioperm: 0x0000000000000065, defined in include/unistd-26.inc[105]
+__NR_socketcall: 0x0000000000000066, defined in include/unistd-26.inc[106]
+__NR_syslog: 0x0000000000000067, defined in include/unistd-26.inc[107]
+__NR_setitimer: 0x0000000000000068, defined in include/unistd-26.inc[108]
+__NR_getitimer: 0x0000000000000069, defined in include/unistd-26.inc[109]
+__NR_stat: 0x000000000000006A, defined in include/unistd-26.inc[110]
+__NR_lstat: 0x000000000000006B, defined in include/unistd-26.inc[111]
+__NR_fstat: 0x000000000000006C, defined in include/unistd-26.inc[112]
+__NR_olduname: 0x000000000000006D, defined in include/unistd-26.inc[113]
+__NR_iopl: 0x000000000000006E, defined in include/unistd-26.inc[114]
+__NR_vhangup: 0x000000000000006F, defined in include/unistd-26.inc[115]
+__NR_idle: 0x0000000000000070, defined in include/unistd-26.inc[116]
+__NR_vm86old: 0x0000000000000071, defined in include/unistd-26.inc[117]
+__NR_wait4: 0x0000000000000072, defined in include/unistd-26.inc[118]
+__NR_swapoff: 0x0000000000000073, defined in include/unistd-26.inc[119]
+__NR_sysinfo: 0x0000000000000074, defined in include/unistd-26.inc[120]
+__NR_ipc: 0x0000000000000075, defined in include/unistd-26.inc[121]
+__NR_fsync: 0x0000000000000076, defined in include/unistd-26.inc[122]
+__NR_sigreturn: 0x0000000000000077, defined in include/unistd-26.inc[123]
+__NR_clone: 0x0000000000000078, defined in include/unistd-26.inc[124]
+__NR_setdomainname: 0x0000000000000079, defined in include/unistd-26.inc[125]
+__NR_uname: 0x000000000000007A, defined in include/unistd-26.inc[126]
+__NR_modify_ldt: 0x000000000000007B, defined in include/unistd-26.inc[127]
+__NR_adjtimex: 0x000000000000007C, defined in include/unistd-26.inc[128]
+__NR_mprotect: 0x000000000000007D, defined in include/unistd-26.inc[129]
+__NR_sigprocmask: 0x000000000000007E, defined in include/unistd-26.inc[130]
+__NR_create_module: 0x000000000000007F, defined in include/unistd-26.inc[131]
+__NR_init_module: 0x0000000000000080, defined in include/unistd-26.inc[132]
+__NR_delete_module: 0x0000000000000081, defined in include/unistd-26.inc[133]
+__NR_get_kernel_syms: 0x0000000000000082, defined in include/unistd-26.inc[134]
+__NR_quotactl: 0x0000000000000083, defined in include/unistd-26.inc[135]
+__NR_getpgid: 0x0000000000000084, defined in include/unistd-26.inc[136]
+__NR_fchdir: 0x0000000000000085, defined in include/unistd-26.inc[137]
+__NR_bdflush: 0x0000000000000086, defined in include/unistd-26.inc[138]
+__NR_sysfs: 0x0000000000000087, defined in include/unistd-26.inc[139]
+__NR_personality: 0x0000000000000088, defined in include/unistd-26.inc[140]
+__NR_afs_syscall: 0x0000000000000089, defined in include/unistd-26.inc[141]
+__NR_setfsuid: 0x000000000000008A, defined in include/unistd-26.inc[142]
+__NR_setfsgid: 0x000000000000008B, defined in include/unistd-26.inc[143]
+__NR__llseek: 0x000000000000008C, defined in include/unistd-26.inc[144]
+__NR_getdents: 0x000000000000008D, defined in include/unistd-26.inc[145]
+__NR__newselect: 0x000000000000008E, defined in include/unistd-26.inc[146]
+__NR_flock: 0x000000000000008F, defined in include/unistd-26.inc[147]
+__NR_msync: 0x0000000000000090, defined in include/unistd-26.inc[148]
+__NR_readv: 0x0000000000000091, defined in include/unistd-26.inc[149]
+__NR_writev: 0x0000000000000092, defined in include/unistd-26.inc[150]
+__NR_getsid: 0x0000000000000093, defined in include/unistd-26.inc[151]
+__NR_fdatasync: 0x0000000000000094, defined in include/unistd-26.inc[152]
+__NR__sysctl: 0x0000000000000095, defined in include/unistd-26.inc[153]
+__NR_mlock: 0x0000000000000096, defined in include/unistd-26.inc[154]
+__NR_munlock: 0x0000000000000097, defined in include/unistd-26.inc[155]
+__NR_mlockall: 0x0000000000000098, defined in include/unistd-26.inc[156]
+__NR_munlockall: 0x0000000000000099, defined in include/unistd-26.inc[157]
+__NR_sched_setparam: 0x000000000000009A, defined in include/unistd-26.inc[158]
+__NR_sched_getparam: 0x000000000000009B, defined in include/unistd-26.inc[159]
+__NR_sched_setscheduler: 0x000000000000009C, defined in include/unistd-26.inc[160]
+__NR_sched_getscheduler: 0x000000000000009D, defined in include/unistd-26.inc[161]
+__NR_sched_yield: 0x000000000000009E, defined in include/unistd-26.inc[162]
+__NR_sched_get_priority_max: 0x000000000000009F, defined in include/unistd-26.inc[163]
+__NR_sched_get_priority_min: 0x00000000000000A0, defined in include/unistd-26.inc[164]
+__NR_sched_rr_get_interval: 0x00000000000000A1, defined in include/unistd-26.inc[165]
+__NR_nanosleep: 0x00000000000000A2, defined in include/unistd-26.inc[166]
+__NR_mremap: 0x00000000000000A3, defined in include/unistd-26.inc[167]
+__NR_setresuid: 0x00000000000000A4, defined in include/unistd-26.inc[168]
+__NR_getresuid: 0x00000000000000A5, defined in include/unistd-26.inc[169]
+__NR_vm86: 0x00000000000000A6, defined in include/unistd-26.inc[170]
+__NR_query_module: 0x00000000000000A7, defined in include/unistd-26.inc[171]
+__NR_poll: 0x00000000000000A8, defined in include/unistd-26.inc[172]
+__NR_nfsservctl: 0x00000000000000A9, defined in include/unistd-26.inc[173]
+__NR_setresgid: 0x00000000000000AA, defined in include/unistd-26.inc[174]
+__NR_getresgid: 0x00000000000000AB, defined in include/unistd-26.inc[175]
+__NR_prctl: 0x00000000000000AC, defined in include/unistd-26.inc[176]
+__NR_rt_sigreturn: 0x00000000000000AD, defined in include/unistd-26.inc[177]
+__NR_rt_sigaction: 0x00000000000000AE, defined in include/unistd-26.inc[178]
+__NR_rt_sigprocmask: 0x00000000000000AF, defined in include/unistd-26.inc[179]
+__NR_rt_sigpending: 0x00000000000000B0, defined in include/unistd-26.inc[180]
+__NR_rt_sigtimedwait: 0x00000000000000B1, defined in include/unistd-26.inc[181]
+__NR_rt_sigqueueinfo: 0x00000000000000B2, defined in include/unistd-26.inc[182]
+__NR_rt_sigsuspend: 0x00000000000000B3, defined in include/unistd-26.inc[183]
+__NR_pread64: 0x00000000000000B4, defined in include/unistd-26.inc[184]
+__NR_pwrite64: 0x00000000000000B5, defined in include/unistd-26.inc[185]
+__NR_chown: 0x00000000000000B6, defined in include/unistd-26.inc[186]
+__NR_getcwd: 0x00000000000000B7, defined in include/unistd-26.inc[187]
+__NR_capget: 0x00000000000000B8, defined in include/unistd-26.inc[188]
+__NR_capset: 0x00000000000000B9, defined in include/unistd-26.inc[189]
+__NR_sigaltstack: 0x00000000000000BA, defined in include/unistd-26.inc[190]
+__NR_sendfile: 0x00000000000000BB, defined in include/unistd-26.inc[191]
+__NR_getpmsg: 0x00000000000000BC, defined in include/unistd-26.inc[192]
+__NR_putpmsg: 0x00000000000000BD, defined in include/unistd-26.inc[193]
+__NR_vfork: 0x00000000000000BE, defined in include/unistd-26.inc[194]
+__NR_ugetrlimit: 0x00000000000000BF, defined in include/unistd-26.inc[195]
+__NR_mmap2: 0x00000000000000C0, defined in include/unistd-26.inc[196]
+__NR_truncate64: 0x00000000000000C1, defined in include/unistd-26.inc[197]
+__NR_ftruncate64: 0x00000000000000C2, defined in include/unistd-26.inc[198]
+__NR_stat64: 0x00000000000000C3, defined in include/unistd-26.inc[199]
+__NR_lstat64: 0x00000000000000C4, defined in include/unistd-26.inc[200]
+__NR_fstat64: 0x00000000000000C5, defined in include/unistd-26.inc[201]
+__NR_lchown32: 0x00000000000000C6, defined in include/unistd-26.inc[202]
+__NR_getuid32: 0x00000000000000C7, defined in include/unistd-26.inc[203]
+__NR_getgid32: 0x00000000000000C8, defined in include/unistd-26.inc[204]
+__NR_geteuid32: 0x00000000000000C9, defined in include/unistd-26.inc[205]
+__NR_getegid32: 0x00000000000000CA, defined in include/unistd-26.inc[206]
+__NR_setreuid32: 0x00000000000000CB, defined in include/unistd-26.inc[207]
+__NR_setregid32: 0x00000000000000CC, defined in include/unistd-26.inc[208]
+__NR_getgroups32: 0x00000000000000CD, defined in include/unistd-26.inc[209]
+__NR_setgroups32: 0x00000000000000CE, defined in include/unistd-26.inc[210]
+__NR_fchown32: 0x00000000000000CF, defined in include/unistd-26.inc[211]
+__NR_setresuid32: 0x00000000000000D0, defined in include/unistd-26.inc[212]
+__NR_getresuid32: 0x00000000000000D1, defined in include/unistd-26.inc[213]
+__NR_setresgid32: 0x00000000000000D2, defined in include/unistd-26.inc[214]
+__NR_getresgid32: 0x00000000000000D3, defined in include/unistd-26.inc[215]
+__NR_chown32: 0x00000000000000D4, defined in include/unistd-26.inc[216]
+__NR_setuid32: 0x00000000000000D5, defined in include/unistd-26.inc[217]
+__NR_setgid32: 0x00000000000000D6, defined in include/unistd-26.inc[218]
+__NR_setfsuid32: 0x00000000000000D7, defined in include/unistd-26.inc[219]
+__NR_setfsgid32: 0x00000000000000D8, defined in include/unistd-26.inc[220]
+__NR_pivot_root: 0x00000000000000D9, defined in include/unistd-26.inc[221]
+__NR_mincore: 0x00000000000000DA, defined in include/unistd-26.inc[222]
+__NR_madvise: 0x00000000000000DB, defined in include/unistd-26.inc[223]
+__NR_madvise1: 0x00000000000000DB, defined in include/unistd-26.inc[224]
+__NR_getdents64: 0x00000000000000DC, defined in include/unistd-26.inc[225]
+__NR_fcntl64: 0x00000000000000DD, defined in include/unistd-26.inc[226]
+__NR_gettid: 0x00000000000000E0, defined in include/unistd-26.inc[228]
+__NR_readahead: 0x00000000000000E1, defined in include/unistd-26.inc[229]
+__NR_setxattr: 0x00000000000000E2, defined in include/unistd-26.inc[230]
+__NR_lsetxattr: 0x00000000000000E3, defined in include/unistd-26.inc[231]
+__NR_fsetxattr: 0x00000000000000E4, defined in include/unistd-26.inc[232]
+__NR_getxattr: 0x00000000000000E5, defined in include/unistd-26.inc[233]
+__NR_lgetxattr: 0x00000000000000E6, defined in include/unistd-26.inc[234]
+__NR_fgetxattr: 0x00000000000000E7, defined in include/unistd-26.inc[235]
+__NR_listxattr: 0x00000000000000E8, defined in include/unistd-26.inc[236]
+__NR_llistxattr: 0x00000000000000E9, defined in include/unistd-26.inc[237]
+__NR_flistxattr: 0x00000000000000EA, defined in include/unistd-26.inc[238]
+__NR_removexattr: 0x00000000000000EB, defined in include/unistd-26.inc[239]
+__NR_lremovexattr: 0x00000000000000EC, defined in include/unistd-26.inc[240]
+__NR_fremovexattr: 0x00000000000000ED, defined in include/unistd-26.inc[241]
+__NR_tkill: 0x00000000000000EE, defined in include/unistd-26.inc[242]
+__NR_sendfile64: 0x00000000000000EF, defined in include/unistd-26.inc[243]
+__NR_futex: 0x00000000000000F0, defined in include/unistd-26.inc[244]
+__NR_sched_setaffinity: 0x00000000000000F1, defined in include/unistd-26.inc[245]
+__NR_sched_getaffinity: 0x00000000000000F2, defined in include/unistd-26.inc[246]
+__NR_set_thread_area: 0x00000000000000F3, defined in include/unistd-26.inc[247]
+__NR_get_thread_area: 0x00000000000000F4, defined in include/unistd-26.inc[248]
+__NR_io_setup: 0x00000000000000F5, defined in include/unistd-26.inc[249]
+__NR_io_destroy: 0x00000000000000F6, defined in include/unistd-26.inc[250]
+__NR_io_getevents: 0x00000000000000F7, defined in include/unistd-26.inc[251]
+__NR_io_submit: 0x00000000000000F8, defined in include/unistd-26.inc[252]
+__NR_io_cancel: 0x00000000000000F9, defined in include/unistd-26.inc[253]
+__NR_fadvise64: 0x00000000000000FA, defined in include/unistd-26.inc[254]
+__NR_exit_group: 0x00000000000000FC, defined in include/unistd-26.inc[256]
+__NR_lookup_dcookie: 0x00000000000000FD, defined in include/unistd-26.inc[257]
+__NR_epoll_create: 0x00000000000000FE, defined in include/unistd-26.inc[258]
+__NR_epoll_ctl: 0x00000000000000FF, defined in include/unistd-26.inc[259]
+__NR_epoll_wait: 0x0000000000000100, defined in include/unistd-26.inc[260]
+__NR_remap_file_pages: 0x0000000000000101, defined in include/unistd-26.inc[261]
+__NR_set_tid_address: 0x0000000000000102, defined in include/unistd-26.inc[262]
+__NR_timer_create: 0x0000000000000103, defined in include/unistd-26.inc[263]
+__NR_timer_settime: 0x0000000000000104, defined in include/unistd-26.inc[264]
+__NR_timer_gettime: 0x0000000000000105, defined in include/unistd-26.inc[265]
+__NR_timer_getoverrun: 0x0000000000000106, defined in include/unistd-26.inc[266]
+__NR_timer_delete: 0x0000000000000107, defined in include/unistd-26.inc[267]
+__NR_clock_settime: 0x0000000000000108, defined in include/unistd-26.inc[268]
+__NR_clock_gettime: 0x0000000000000109, defined in include/unistd-26.inc[269]
+__NR_clock_getres: 0x000000000000010A, defined in include/unistd-26.inc[270]
+__NR_clock_nanosleep: 0x000000000000010B, defined in include/unistd-26.inc[271]
+__NR_statfs64: 0x000000000000010C, defined in include/unistd-26.inc[272]
+__NR_fstatfs64: 0x000000000000010D, defined in include/unistd-26.inc[273]
+__NR_tgkill: 0x000000000000010E, defined in include/unistd-26.inc[274]
+__NR_utimes: 0x000000000000010F, defined in include/unistd-26.inc[275]
+__NR_fadvise64_64: 0x0000000000000110, defined in include/unistd-26.inc[276]
+__NR_vserver: 0x0000000000000111, defined in include/unistd-26.inc[277]
+__NR_mbind: 0x0000000000000112, defined in include/unistd-26.inc[278]
+__NR_get_mempolicy: 0x0000000000000113, defined in include/unistd-26.inc[279]
+__NR_set_mempolicy: 0x0000000000000114, defined in include/unistd-26.inc[280]
+__NR_mq_open: 0x0000000000000115, defined in include/unistd-26.inc[281]
+__NR_mq_unlink: 0x0000000000000116, defined in include/unistd-26.inc[282]
+__NR_mq_timedsend: 0x0000000000000117, defined in include/unistd-26.inc[283]
+__NR_mq_timedreceive: 0x0000000000000118, defined in include/unistd-26.inc[284]
+__NR_mq_notify: 0x0000000000000119, defined in include/unistd-26.inc[285]
+__NR_mq_getsetattr: 0x000000000000011A, defined in include/unistd-26.inc[286]
+__NR_kexec_load: 0x000000000000011B, defined in include/unistd-26.inc[287]
+__NR_waitid: 0x000000000000011C, defined in include/unistd-26.inc[288]
+__NR_add_key: 0x000000000000011E, defined in include/unistd-26.inc[290]
+__NR_request_key: 0x000000000000011F, defined in include/unistd-26.inc[291]
+__NR_keyctl: 0x0000000000000120, defined in include/unistd-26.inc[292]
+__NR_ioprio_set: 0x0000000000000121, defined in include/unistd-26.inc[293]
+__NR_ioprio_get: 0x0000000000000122, defined in include/unistd-26.inc[294]
+__NR_inotify_init: 0x0000000000000123, defined in include/unistd-26.inc[295]
+__NR_inotify_add_watch: 0x0000000000000124, defined in include/unistd-26.inc[296]
+__NR_inotify_rm_watch: 0x0000000000000125, defined in include/unistd-26.inc[297]
+__NR_migrate_pages: 0x0000000000000126, defined in include/unistd-26.inc[298]
+__NR_openat: 0x0000000000000127, defined in include/unistd-26.inc[299]
+__NR_mkdirat: 0x0000000000000128, defined in include/unistd-26.inc[300]
+__NR_mknodat: 0x0000000000000129, defined in include/unistd-26.inc[301]
+__NR_fchownat: 0x000000000000012A, defined in include/unistd-26.inc[302]
+__NR_futimesat: 0x000000000000012B, defined in include/unistd-26.inc[303]
+__NR_fstatat64: 0x000000000000012C, defined in include/unistd-26.inc[304]
+__NR_unlinkat: 0x000000000000012D, defined in include/unistd-26.inc[305]
+__NR_renameat: 0x000000000000012E, defined in include/unistd-26.inc[306]
+__NR_linkat: 0x000000000000012F, defined in include/unistd-26.inc[307]
+__NR_symlinkat: 0x0000000000000130, defined in include/unistd-26.inc[308]
+__NR_readlinkat: 0x0000000000000131, defined in include/unistd-26.inc[309]
+__NR_fchmodat: 0x0000000000000132, defined in include/unistd-26.inc[310]
+__NR_faccessat: 0x0000000000000133, defined in include/unistd-26.inc[311]
+__NR_pselect6: 0x0000000000000134, defined in include/unistd-26.inc[312]
+__NR_ppoll: 0x0000000000000135, defined in include/unistd-26.inc[313]
+__NR_unshare: 0x0000000000000136, defined in include/unistd-26.inc[314]
+__NR_set_robust_list: 0x0000000000000137, defined in include/unistd-26.inc[315]
+__NR_get_robust_list: 0x0000000000000138, defined in include/unistd-26.inc[316]
+__NR_splice: 0x0000000000000139, defined in include/unistd-26.inc[317]
+__NR_sync_file_range: 0x000000000000013A, defined in include/unistd-26.inc[318]
+__NR_tee: 0x000000000000013B, defined in include/unistd-26.inc[319]
+__NR_vmsplice: 0x000000000000013C, defined in include/unistd-26.inc[320]
+__NR_move_pages: 0x000000000000013D, defined in include/unistd-26.inc[321]
+__NR_getcpu: 0x000000000000013E, defined in include/unistd-26.inc[322]
+__NR_eventfd: 0x0000000000000143, defined in include/unistd-26.inc[327]
+__NR_fallocate: 0x0000000000000144, defined in include/unistd-26.inc[328]
+F_IMMED: 0x0000000000000080, defined in core.asm[40]
+F_HIDDEN: 0x0000000000000020, defined in core.asm[41]
+F_LENMASK: 0x000000000000001F, defined in core.asm[42]
+INIT_DAT_SEG_SIZE: 0x0000000000004000, defined in core.asm[44]
+RETURN_STACK_SIZE: 0x0000000000000400, defined in core.asm[45]
+ALT_STACK_SIZE: 0x0000000000000080, defined in core.asm[46]
+BUFFER_SIZE: 0x0000000000004000, defined in core.asm[47]
+FLOW_VERSION: 0x0000000000000009, defined in core.asm[48]
+MAX_STRING_LENGTH: 0x0000000000000100, defined in core.asm[49]
+BELFRY: 0x0000000008048114, defined in core.asm[59]
+ENDBELFRY: 0x0000000008048114, defined in core.asm[65]
+str?5: 0x0000000008048225, defined in {line generated by {line generated by {line generated by {line generated by core.asm[141] from include/import32.inc[63]}}}}
+strtab?6: 0x0000000008048207, defined in {line generated by core.asm[141] from include/import32.inc[58]}
+strsz?7: 0x0000000000000029, defined in {line generated by core.asm[141] from include/import32.inc[64]}
+symtab?8: 0x0000000008048177, defined in {line generated by core.asm[141] from include/import32.inc[35]}
+rel?9: 0x00000000080481C7, defined in {line generated by core.asm[141] from include/import32.inc[40]}
+relsz?A: 0x0000000000000020, defined in {line generated by core.asm[141] from include/import32.inc[47]}
+hash?B: 0x00000000080481E7, defined in {line generated by core.asm[141] from include/import32.inc[48]}
+fstr?C: 0x0000000008048208, defined in {line generated by core.asm[141] from include/import32.inc[60]}
+fstr?D: 0x000000000804820F, defined in {line generated by core.asm[141] from include/import32.inc[60]}
+fstr?E: 0x0000000008048215, defined in {line generated by core.asm[141] from include/import32.inc[60]}
+fstr?F: 0x000000000804821D, defined in {line generated by core.asm[141] from include/import32.inc[60]}
+counter?G: 0x0000000000000005, defined in {line generated by core.asm[141] from include/import32.inc[45]}
+dlopen: 0x0000000008048230, defined in {line generated by core.asm[141] from include/import32.inc[66]}
+dlsym: 0x0000000008048234, defined in {line generated by core.asm[141] from include/import32.inc[66]}
+dlerror: 0x0000000008048238, defined in {line generated by core.asm[141] from include/import32.inc[66]}
+dlclose: 0x000000000804823C, defined in {line generated by core.asm[141] from include/import32.inc[66]}
+INIT.edi: 0x000000000804D834, defined in data.asm[773]
+INIT.eax: 0x000000000804D824, defined in data.asm[769]
+var_S0: 0x000000000804D884, defined in data.asm[806]
+var_ARGC: 0x000000000804D868, defined in data.asm[799]
+var_ARGS: 0x000000000804D86C, defined in data.asm[800]
+var_ENVS: 0x000000000804D874, defined in data.asm[802]
+_start.envloop: 0x0000000008049263, defined in core.asm[182]
+var_ENVC: 0x000000000804D870, defined in data.asm[801]
+return_stack_top: 0x000000000804F400, defined in data.asm[826]
+var_DP: 0x000000000804D87C, defined in data.asm[804]
+cold_start: 0x000000000804AE20, defined in data.asm[59]
+code_INITST: 0x000000000804929B, defined in core.asm[204]
+code_DLOPEN: 0x00000000080492A3, defined in core.asm[218]
+code_DLSYM: 0x00000000080492B0, defined in core.asm[226]
+code_DLERR: 0x00000000080492BD, defined in core.asm[234]
+code_DLCLOSE: 0x00000000080492C7, defined in core.asm[241]
+code_DYNCALL: 0x00000000080492D4, defined in core.asm[250]
+DOCOL: 0x00000000080492DE, defined in core.asm[259]
+DODOES: 0x00000000080492EC, defined in core.asm[266]
+DODOES.skip: 0x00000000080492FB, defined in core.asm[272]
+code_EXIT: 0x0000000008049302, defined in core.asm[278]
+code_DROP: 0x000000000804930B, defined in core.asm[286]
+code_SWAP: 0x000000000804930F, defined in core.asm[291]
+code_DUP: 0x0000000008049316, defined in core.asm[299]
+code_OVER: 0x000000000804931D, defined in core.asm[305]
+code_ROT: 0x0000000008049325, defined in core.asm[311]
+code_NROT: 0x000000000804932E, defined in core.asm[321]
+code_TWODROP: 0x0000000008049337, defined in core.asm[331]
+code_TWODUP: 0x000000000804933C, defined in core.asm[337]
+code_TWOSWAP: 0x0000000008049348, defined in core.asm[345]
+code_NIP: 0x0000000008049353, defined in core.asm[357]
+code_TUCK: 0x0000000008049359, defined in core.asm[364]
+code_PICK: 0x0000000008049361, defined in core.asm[370]
+code_QDUP: 0x000000000804936C, defined in core.asm[379]
+code_QDUP.skip: 0x0000000008049374, defined in core.asm[384]
+code_INCR: 0x0000000008049377, defined in core.asm[388]
+code_DECR: 0x000000000804937D, defined in core.asm[393]
+code_INCR4: 0x0000000008049383, defined in core.asm[398]
+code_DECR4: 0x000000000804938D, defined in core.asm[403]
+code__ADD: 0x0000000008049397, defined in core.asm[408]
+code__SUB: 0x000000000804939E, defined in core.asm[414]
+code__MUL: 0x00000000080493A5, defined in core.asm[420]
+code__DIV: 0x00000000080493AE, defined in core.asm[428]
+code__MOD: 0x00000000080493B7, defined in core.asm[437]
+code_DIVMOD: 0x00000000080493C0, defined in core.asm[447]
+code_UDIV: 0x00000000080493CA, defined in core.asm[457]
+code_UMOD: 0x00000000080493D2, defined in core.asm[465]
+code_UDIVMOD: 0x00000000080493DA, defined in core.asm[473]
+code_WITHIN: 0x00000000080493E3, defined in core.asm[482]
+code_WITHIN.false: 0x00000000080493F1, defined in core.asm[492]
+code_BINARY: 0x00000000080493F5, defined in core.asm[497]
+var_BASE: 0x000000000804D888, defined in data.asm[807]
+code_OCTAL: 0x0000000008049402, defined in core.asm[501]
+code_HEX: 0x000000000804940F, defined in core.asm[505]
+code_DECIMAL: 0x000000000804941C, defined in core.asm[509]
+code__EQU: 0x0000000008049429, defined in core.asm[519]
+code_NEQU: 0x000000000804943E, defined in core.asm[531]
+code_LT: 0x0000000008049453, defined in core.asm[543]
+code_GT: 0x0000000008049468, defined in core.asm[555]
+code_LE: 0x000000000804947D, defined in core.asm[567]
+code_GE: 0x0000000008049492, defined in core.asm[579]
+code_ZEQU: 0x00000000080494A7, defined in core.asm[591]
+code_ZNEQU: 0x00000000080494BB, defined in core.asm[602]
+code_ZLT: 0x00000000080494CF, defined in core.asm[615]
+code_ZGT: 0x00000000080494E5, defined in core.asm[627]
+code_ZLE: 0x00000000080494FB, defined in core.asm[639]
+code_ZGE: 0x0000000008049511, defined in core.asm[651]
+code__AND: 0x0000000008049527, defined in core.asm[664]
+code__OR: 0x000000000804952E, defined in core.asm[670]
+code__XOR: 0x0000000008049535, defined in core.asm[676]
+code_INVERT: 0x000000000804953C, defined in core.asm[683]
+code_NEGATE: 0x0000000008049542, defined in core.asm[688]
+code__NOT: 0x0000000008049548, defined in core.asm[693]
+code_TRUE: 0x0000000008049553, defined in core.asm[701]
+code_FALSE: 0x000000000804955B, defined in core.asm[706]
+code_LIT: 0x0000000008049563, defined in core.asm[716]
+code_STORE: 0x0000000008049568, defined in core.asm[722]
+code_FETCH: 0x000000000804956F, defined in core.asm[729]
+code_ADDSTORE: 0x0000000008049576, defined in core.asm[736]
+code_SUBSTORE: 0x000000000804957D, defined in core.asm[743]
+code_STOREBYTE: 0x0000000008049584, defined in core.asm[750]
+code_FETCHBYTE: 0x000000000804958B, defined in core.asm[757]
+code_CCOPY: 0x0000000008049594, defined in core.asm[766]
+code_CMOVE: 0x00000000080495A4, defined in core.asm[777]
+code_CMOVED: 0x00000000080495B0, defined in core.asm[787]
+code_STATE: 0x00000000080495BD, defined in core.asm[806]
+var_STATE: 0x000000000804D878, defined in data.asm[803]
+code_DP: 0x00000000080495C5, defined in core.asm[811]
+code_LATEST: 0x00000000080495CD, defined in core.asm[816]
+var_LATEST: 0x000000000804D880, defined in data.asm[805]
+code_S0: 0x00000000080495D5, defined in core.asm[821]
+code_BASE: 0x00000000080495DD, defined in core.asm[826]
+code_FDESC: 0x00000000080495E5, defined in core.asm[832]
+var_FDESC: 0x000000000804D88C, defined in data.asm[808]
+code_FBUFF: 0x00000000080495ED, defined in core.asm[836]
+var_FBUFF: 0x000000000804D890, defined in data.asm[809]
+code_FSTAT: 0x00000000080495F5, defined in core.asm[840]
+var_FSTAT: 0x000000000804D894, defined in data.asm[810]
+code_ASTAK: 0x00000000080495FD, defined in core.asm[845]
+var_ASTAK: 0x000000000804D8F4, defined in data.asm[811]
+code_VERSION: 0x0000000008049605, defined in core.asm[862]
+code_RZ: 0x000000000804960A, defined in core.asm[867]
+code_DOCOL: 0x0000000008049612, defined in core.asm[872]
+code___F_IMMED: 0x000000000804961A, defined in core.asm[877]
+code___F_HIDDEN: 0x0000000008049622, defined in core.asm[882]
+code___F_LENMASK: 0x0000000008049627, defined in core.asm[887]
+code_SYS_EXIT: 0x000000000804962C, defined in core.asm[892]
+code_SYS_OPEN: 0x0000000008049631, defined in core.asm[897]
+code_SYS_CLOSE: 0x0000000008049636, defined in core.asm[902]
+code_SYS_READ: 0x000000000804963B, defined in core.asm[907]
+code_SYS_WRITE: 0x0000000008049640, defined in core.asm[912]
+code_SYS_CREAT: 0x0000000008049645, defined in core.asm[917]
+code_SYS_STAT: 0x000000000804964A, defined in core.asm[922]
+code_SYS_FSTAT: 0x000000000804964F, defined in core.asm[927]
+code_SYS_BRK: 0x0000000008049654, defined in core.asm[932]
+code_SYS_FORK: 0x0000000008049659, defined in core.asm[937]
+code_SYS_EXECVE: 0x000000000804965E, defined in core.asm[942]
+code___O_RDONLY: 0x0000000008049663, defined in core.asm[947]
+code___O_WRONLY: 0x0000000008049668, defined in core.asm[952]
+code___O_RDWR: 0x000000000804966D, defined in core.asm[957]
+code___O_CREAT: 0x0000000008049672, defined in core.asm[962]
+code___O_EXCL: 0x0000000008049677, defined in core.asm[967]
+code___O_TRUNC: 0x000000000804967F, defined in core.asm[972]
+code___O_APPEND: 0x0000000008049687, defined in core.asm[977]
+code___O_NONBLOCK: 0x000000000804968F, defined in core.asm[982]
+code___DODOES: 0x0000000008049697, defined in core.asm[987]
+code_ARGC: 0x000000000804969F, defined in core.asm[992]
+code_ARGS: 0x00000000080496A8, defined in core.asm[996]
+code_ARG0: 0x00000000080496B1, defined in core.asm[1000]
+var_ARG0: 0x000000000804D848, defined in data.asm[780]
+code_ARG1: 0x00000000080496B9, defined in core.asm[1004]
+var_ARG1: 0x000000000804D84C, defined in data.asm[781]
+code_ENVC: 0x00000000080496C1, defined in core.asm[1008]
+code_ENVS: 0x00000000080496CA, defined in core.asm[1012]
+code_RTLDLOCAL: 0x00000000080496D3, defined in core.asm[1017]
+code_RTLDLAZY: 0x00000000080496DB, defined in core.asm[1021]
+code_RTLDNOW: 0x00000000080496E3, defined in core.asm[1025]
+code_RTLDBINDMASK: 0x00000000080496EB, defined in core.asm[1029]
+code_RTLDNOLOAD: 0x00000000080496F3, defined in core.asm[1033]
+code_RTLDDEEPBIND: 0x00000000080496FB, defined in core.asm[1037]
+code_RTLDGLOBAL: 0x0000000008049703, defined in core.asm[1041]
+code_RTLDNODELETE: 0x000000000804970B, defined in core.asm[1045]
+code_TOR: 0x0000000008049713, defined in core.asm[1052]
+code_FROMR: 0x000000000804971D, defined in core.asm[1058]
+code_RSPFETCH: 0x0000000008049727, defined in core.asm[1064]
+code_RSPSTORE: 0x000000000804972B, defined in core.asm[1069]
+code_RDROP: 0x000000000804972F, defined in core.asm[1074]
+code_PSPFETCH: 0x0000000008049735, defined in core.asm[1081]
+code_PSPSTORE: 0x000000000804973B, defined in core.asm[1087]
+code_ASPFROM: 0x0000000008049743, defined in core.asm[1097]
+code_ASPTO: 0x000000000804975A, defined in core.asm[1108]
+code_BYE: 0x0000000008049771, defined in core.asm[1121]
+code_HERE: 0x000000000804977A, defined in core.asm[1127]
+code_INTERP: 0x0000000008049783, defined in core.asm[1132]
+code_INTERPRET.jumpin: 0x000000000804978C, defined in core.asm[1141]
+code_INTERPRET: 0x0000000008049787, defined in core.asm[1138]
+_PWORD: 0x0000000008049881, defined in core.asm[1251]
+interpret_is_lit: 0x000000000804D918, defined in data.asm[813]
+_FIND: 0x0000000008049919, defined in core.asm[1343]
+code_INTERPRET.Q1: 0x00000000080497B0, defined in core.asm[1158]
+_TCFA: 0x0000000008049950, defined in core.asm[1385]
+code_INTERPRET.Q4: 0x00000000080497E9, defined in core.asm[1178]
+code_INTERPRET.Q2: 0x00000000080497C6, defined in core.asm[1165]
+_NUMBER: 0x00000000080498C2, defined in core.asm[1286]
+code_INTERPRET.Q6: 0x00000000080497F9, defined in core.asm[1188]
+LIT: 0x000000000804B24C, defined in {line generated by data.asm[189] from data.asm[42]}
+_COMMA: 0x000000000804999C, defined in core.asm[1427]
+code_INTERPRET.Q3: 0x00000000080497E6, defined in core.asm[1176]
+code_INTERPRET.Q5: 0x00000000080497F5, defined in core.asm[1185]
+errmsg: 0x000000000804AE24, defined in data.asm[61]
+errmsgend: 0x000000000804AE31, defined in data.asm[62]
+currkey: 0x000000000804D920, defined in data.asm[815]
+buffer: 0x0000000008051000, defined in data.asm[831]
+code_INTERPRET.Q7: 0x0000000008049827, defined in core.asm[1202]
+errmsgnl: 0x000000000804AE31, defined in data.asm[63]
+code_PAREN_STDIN: 0x0000000008049844, defined in core.asm[1213]
+currinp: 0x000000000804D91C, defined in data.asm[814]
+code_PAREN_EVAL: 0x000000000804984E, defined in core.asm[1219]
+code_BRACKET_WORD: 0x0000000008049859, defined in core.asm[1225]
+word_buffer: 0x000000000804D8F8, defined in data.asm[812]
+code_BRACKET_WORD.loop: 0x0000000008049860, defined in core.asm[1229]
+_KEY: 0x0000000008049B2F, defined in core.asm[1657]
+code_PAREN_WORD: 0x0000000008049877, defined in core.asm[1245]
+_PWORD.W1: 0x0000000008049881, defined in core.asm[1252]
+_PWORD.W3: 0x00000000080498AB, defined in core.asm[1271]
+_PWORD.W2: 0x0000000008049893, defined in core.asm[1260]
+code_NUMBER: 0x00000000080498B6, defined in core.asm[1278]
+_NUMBER.N5: 0x000000000804990D, defined in core.asm[1332]
+_NUMBER.N2: 0x00000000080498EB, defined in core.asm[1311]
+_NUMBER.N1: 0x00000000080498E5, defined in core.asm[1306]
+_NUMBER.N4: 0x0000000008049906, defined in core.asm[1327]
+_NUMBER.N3: 0x00000000080498FD, defined in core.asm[1319]
+code_PAREN_FIND: 0x000000000804990E, defined in core.asm[1336]
+_FIND.F1: 0x0000000008049920, defined in core.asm[1347]
+_FIND.F3: 0x0000000008049942, defined in core.asm[1374]
+_FIND.F2: 0x000000000804993E, defined in core.asm[1370]
+code_TCFA: 0x0000000008049946, defined in core.asm[1380]
+code_HEADER_COMMA: 0x0000000008049963, defined in core.asm[1399]
+code_COMMA: 0x0000000008049993, defined in core.asm[1423]
+code_LBRAC: 0x00000000080499AA, defined in core.asm[1438]
+code_RBRAC: 0x00000000080499B4, defined in core.asm[1444]
+code_IMMEDIATE: 0x00000000080499C1, defined in core.asm[1449]
+code_HIDDEN: 0x00000000080499D0, defined in core.asm[1456]
+code_BRACKET_TICK: 0x00000000080499DA, defined in core.asm[1463]
+code_ALIGNED: 0x00000000080499DF, defined in core.asm[1469]
+code_CHARCOMMA: 0x00000000080499EF, defined in core.asm[1481]
+code_DLEN: 0x0000000008049A02, defined in core.asm[1490]
+code_DLEN.loop: 0x0000000008049A09, defined in core.asm[1493]
+code_DLEN.done: 0x0000000008049A10, defined in core.asm[1498]
+code_BRANCH: 0x0000000008049A14, defined in core.asm[1505]
+code_ZBRANCH: 0x0000000008049A19, defined in core.asm[1510]
+code_EXECUTE: 0x0000000008049A22, defined in core.asm[1518]
+code__IF: 0x0000000008049A25, defined in core.asm[1524]
+ZBRANCH: 0x000000000804B9C0, defined in {line generated by data.asm[351] from data.asm[42]}
+code__THEN: 0x0000000008049A3E, defined in core.asm[1535]
+code__ELSE: 0x0000000008049A4A, defined in core.asm[1543]
+BRANCH: 0x000000000804B9B0, defined in {line generated by data.asm[350] from data.asm[42]}
+code_BEGIN: 0x0000000008049A6A, defined in core.asm[1558]
+code_UNTIL: 0x0000000008049A73, defined in core.asm[1563]
+code_AGAIN: 0x0000000008049A8E, defined in core.asm[1575]
+code__WHILE: 0x0000000008049AA9, defined in core.asm[1587]
+code__REPEAT: 0x0000000008049AC6, defined in core.asm[1601]
+code_UNLESS: 0x0000000008049AE8, defined in core.asm[1617]
+INVERT: 0x000000000804B204, defined in {line generated by data.asm[184] from data.asm[42]}
+_IF: 0x000000000804C60C, defined in {line generated by data.asm[714] from data.asm[42]}
+code_CASE: 0x0000000008049B03, defined in core.asm[1627]
+code_LPAREN: 0x0000000008049B09, defined in core.asm[1635]
+code_LPAREN.loop: 0x0000000008049B0E, defined in core.asm[1637]
+code_LPAREN.skip: 0x0000000008049B1C, defined in core.asm[1645]
+code_KEY: 0x0000000008049B26, defined in core.asm[1653]
+bufftop: 0x000000000804D924, defined in data.asm[816]
+_KEY.K1: 0x0000000008049B49, defined in core.asm[1670]
+_KEY.K2: 0x0000000008049B74, defined in core.asm[1683]
+_KEY.K3: 0x0000000008049B98, defined in core.asm[1694]
+code_EMIT: 0x0000000008049BA1, defined in core.asm[1700]
+_EMIT: 0x0000000008049BAA, defined in core.asm[1704]
+emit_scratch: 0x000000000804D928, defined in data.asm[817]
+_EMIT2: 0x0000000008049BAF, defined in core.asm[1706]
+code_CHAR: 0x0000000008049BC6, defined in core.asm[1715]
+code_CLS: 0x0000000008049BD3, defined in core.asm[1724]
+clsseq: 0x000000000804AE32, defined in data.asm[64]
+clsseqend: 0x000000000804AE3C, defined in data.asm[65]
+code_SPACES: 0x0000000008049BEC, defined in core.asm[1733]
+_SPACES: 0x0000000008049BF5, defined in core.asm[1737]
+_SPACES.done: 0x0000000008049C0B, defined in core.asm[1747]
+_SPACES.loop: 0x0000000008049C02, defined in core.asm[1742]
+code_SYSCALL3: 0x0000000008049C0C, defined in core.asm[1753]
+code_SYSCALL2: 0x0000000008049C16, defined in core.asm[1763]
+code_SYSCALL1: 0x0000000008049C1F, defined in core.asm[1772]
+code_SYSCALL0: 0x0000000008049C27, defined in core.asm[1780]
+code_SHEBANG: 0x0000000008049C2E, defined in core.asm[1789]
+code_SHEBANG.loop: 0x0000000008049C2E, defined in core.asm[1790]
+code_ENVQ: 0x0000000008049C3A, defined in core.asm[1799]
+code_ENVQ.esp: 0x0000000008049C95, defined in core.asm[1836]
+code_ENVQ.str: 0x0000000008049C9D, defined in core.asm[1838]
+code_ENVQ.cnt: 0x0000000008049CA1, defined in core.asm[1839]
+code_ENVQ.esi: 0x0000000008049C99, defined in core.asm[1837]
+code_ENVQ.outer: 0x0000000008049C5D, defined in core.asm[1810]
+code_ENVQ.done: 0x0000000008049C89, defined in core.asm[1830]
+code_ENVQ.inner: 0x0000000008049C72, defined in core.asm[1818]
+code_CELLS: 0x0000000008049CA5, defined in core.asm[1845]
+code_GETBRK: 0x0000000008049CAD, defined in core.asm[1852]
+_GETBRK: 0x0000000008049CB6, defined in core.asm[1856]
+_BRK: 0x0000000008049CB8, defined in core.asm[1858]
+code_BRK: 0x0000000008049CC0, defined in core.asm[1864]
+code_MORECORE: 0x0000000008049CCA, defined in core.asm[1871]
+code_UNUSED: 0x0000000008049CDF, defined in core.asm[1882]
+code_READONLY: 0x0000000008049CF3, defined in core.asm[1894]
+code_READWRITE: 0x0000000008049CF9, defined in core.asm[1899]
+code_DEPTH: 0x0000000008049D01, defined in core.asm[1909]
+code_LITSTRING: 0x0000000008049D11, defined in core.asm[1918]
+code_TYPE: 0x0000000008049D1F, defined in core.asm[1928]
+code_PAREN_UDOT: 0x0000000008049D30, defined in core.asm[1937]
+udottop: 0x000000000804D937, defined in data.asm[819]
+code_PAREN_UDOT.loop: 0x0000000008049D3E, defined in core.asm[1943]
+code_PAREN_UDOT.skip1: 0x0000000008049D4C, defined in core.asm[1952]
+code_PAREN_UDOT.skip2: 0x0000000008049D52, defined in core.asm[1956]
+code_PAREN_UDOT.done: 0x0000000008049D5B, defined in core.asm[1962]
+code_UWIDTH: 0x0000000008049D66, defined in core.asm[1975]
+code_UWIDTH.loop: 0x0000000008049D70, defined in core.asm[1980]
+code_DOTR: 0x0000000008049D7D, defined in core.asm[1990]
+code_DOTR.skip1: 0x0000000008049D89, defined in core.asm[1998]
+code_DOTR.skip2: 0x0000000008049D9A, defined in core.asm[2005]
+code_STRMATCH: 0x0000000008049DA2, defined in core.asm[2011]
+code_STRMATCH.loop: 0x0000000008049DB1, defined in core.asm[2020]
+code_STRMATCH.match: 0x0000000008049DBF, defined in core.asm[2029]
+code_STRMATCH.lt: 0x0000000008049DD5, defined in core.asm[2045]
+code_STRMATCH.gt: 0x0000000008049DD8, defined in core.asm[2048]
+code_STRMATCH.done: 0x0000000008049DCF, defined in core.asm[2040]
+code_STRMATCH.fail: 0x0000000008049DC5, defined in core.asm[2033]
+code_STRIDX: 0x0000000008049DDB, defined in core.asm[2058]
+code_STRCHR.strindex: 0x0000000008049DE6, defined in core.asm[2066]
+code_STRCHR: 0x0000000008049DE4, defined in core.asm[2064]
+code_STRCHR.loop: 0x0000000008049DEF, defined in core.asm[2071]
+code_STRCHR.match: 0x0000000008049E00, defined in core.asm[2081]
+code_STRCHR.strend: 0x0000000008049E18, defined in core.asm[2094]
+code_STRCHR.fail: 0x0000000008049DF8, defined in core.asm[2077]
+code_STRCHR.done: 0x0000000008049E12, defined in core.asm[2090]
+code_STRCHR.skip: 0x0000000008049E0F, defined in core.asm[2087]
+CLI_PARSE: 0x000000000804AEAC, defined in {line generated by data.asm[115] from data.asm[53]}
+link: 0x000000000804C818, defined in {line generated by data.asm[761] from data.asm[39]}
+name_ARG0: 0x000000000804AE3C, defined in {line generated by data.asm[70] from data.asm[37]}
+ARG0: 0x000000000804AE48, defined in {line generated by data.asm[70] from data.asm[42]}
+name_ARG1: 0x000000000804AE4C, defined in {line generated by data.asm[71] from data.asm[37]}
+ARG1: 0x000000000804AE58, defined in {line generated by data.asm[71] from data.asm[42]}
+name_CLS: 0x000000000804AE5C, defined in {line generated by data.asm[72] from data.asm[37]}
+CLS: 0x000000000804AE64, defined in {line generated by data.asm[72] from data.asm[42]}
+name_DLEN: 0x000000000804AE68, defined in {line generated by data.asm[73] from data.asm[37]}
+DLEN: 0x000000000804AE74, defined in {line generated by data.asm[73] from data.asm[42]}
+undefined?0: 0x000000000804C820, defined in {line generated by data.asm[761] from data.asm[42]}
+INCR4: 0x000000000804B0BC, defined in {line generated by data.asm[158] from data.asm[42]}
+SWAP: 0x000000000804C814, defined in {line generated by data.asm[760] from data.asm[42]}
+FETCH: 0x000000000804B264, defined in {line generated by data.asm[191] from data.asm[42]}
+UDOT: 0x000000000804C490, defined in {line generated by data.asm[675] from data.asm[53]}
+_CR: 0x000000000804B6F4, defined in {line generated by data.asm[270] from data.asm[53]}
+EXIT: 0x000000000804C7C0, defined in {line generated by data.asm[755] from data.asm[42]}
+BASE: 0x000000000804B34C, defined in {line generated by data.asm[207] from data.asm[42]}
+HEX: 0x000000000804C4E0, defined in {line generated by data.asm[684] from data.asm[42]}
+TYPE: 0x000000000804B9E4, defined in {line generated by data.asm[353] from data.asm[42]}
+DROP: 0x000000000804C7F0, defined in {line generated by data.asm[758] from data.asm[42]}
+undefined?1: 0x000000000804B258, defined in {line generated by data.asm[190] from data.asm[42]}
+QUIT: 0x000000000804AE84, defined in {line generated by data.asm[104] from data.asm[53]}
+name_QUIT: 0x000000000804AE78, defined in {line generated by data.asm[104] from data.asm[48]}
+RZ: 0x000000000804B368, defined in {line generated by data.asm[209] from data.asm[42]}
+RSPSTORE: 0x000000000804B788, defined in {line generated by data.asm[282] from data.asm[42]}
+INTERPRET: 0x000000000804AFC4, defined in {line generated by data.asm[141] from data.asm[42]}
+name_CLI_PARSE: 0x000000000804AE9C, defined in {line generated by data.asm[115] from data.asm[48]}
+ARGC: 0x000000000804B660, defined in {line generated by data.asm[255] from data.asm[42]}
+_EQU: 0x000000000804B14C, defined in {line generated by data.asm[169] from data.asm[42]}
+CLI_PARSE.str: 0x000000000804AF2C, defined in data.asm[127]
+CLI_PARSE.strlen: 0x0000000000000010, defined in data.asm[129]
+INCR: 0x000000000804B0A4, defined in {line generated by data.asm[156] from data.asm[42]}
+CELLS: 0x000000000804BE24, defined in {line generated by data.asm[502] from data.asm[42]}
+ARGS: 0x000000000804B670, defined in {line generated by data.asm[256] from data.asm[42]}
+_ADD: 0x000000000804B0D4, defined in {line generated by data.asm[160] from data.asm[42]}
+_EVAL: 0x000000000804C39C, defined in {line generated by data.asm[651] from data.asm[53]}
+CLI_PARSE.stre: 0x000000000804AF3C, defined in data.asm[128]
+name_ERR0: 0x000000000804AF3C, defined in {line generated by data.asm[132] from data.asm[48]}
+ERR0: 0x000000000804AF48, defined in {line generated by data.asm[132] from data.asm[53]}
+name_PRINT: 0x000000000804AF64, defined in {line generated by data.asm[136] from data.asm[48]}
+PRINT: 0x000000000804AF70, defined in {line generated by data.asm[136] from data.asm[53]}
+DEPTH: 0x000000000804C4F0, defined in {line generated by data.asm[685] from data.asm[42]}
+GE: 0x000000000804B188, defined in {line generated by data.asm[174] from data.asm[42]}
+STRLEN: 0x000000000804BD18, defined in {line generated by data.asm[464] from data.asm[53]}
+name_INTERP: 0x000000000804AFA0, defined in {line generated by data.asm[140] from data.asm[37]}
+INTERP: 0x000000000804AFB0, defined in {line generated by data.asm[140] from data.asm[42]}
+name_INTERPRET: 0x000000000804AFB4, defined in {line generated by data.asm[141] from data.asm[37]}
+name___DODOES: 0x000000000804AFC8, defined in {line generated by data.asm[142] from data.asm[37]}
+__DODOES: 0x000000000804AFD4, defined in {line generated by data.asm[142] from data.asm[42]}
+name_BINARY: 0x000000000804AFD8, defined in {line generated by data.asm[143] from data.asm[37]}
+BINARY: 0x000000000804AFE4, defined in {line generated by data.asm[143] from data.asm[42]}
+name_OCTAL: 0x000000000804AFE8, defined in {line generated by data.asm[144] from data.asm[37]}
+OCTAL: 0x000000000804AFF4, defined in {line generated by data.asm[144] from data.asm[42]}
+name_BYE: 0x000000000804AFF8, defined in {line generated by data.asm[145] from data.asm[37]}
+BYE: 0x000000000804B000, defined in {line generated by data.asm[145] from data.asm[42]}
+name_OVER: 0x000000000804B004, defined in {line generated by data.asm[146] from data.asm[37]}
+OVER: 0x000000000804B010, defined in {line generated by data.asm[146] from data.asm[42]}
+name_ROT: 0x000000000804B014, defined in {line generated by data.asm[147] from data.asm[37]}
+ROT: 0x000000000804B01C, defined in {line generated by data.asm[147] from data.asm[42]}
+name_NROT: 0x000000000804B020, defined in {line generated by data.asm[148] from data.asm[37]}
+NROT: 0x000000000804B02C, defined in {line generated by data.asm[148] from data.asm[42]}
+name_TWODROP: 0x000000000804B030, defined in {line generated by data.asm[149] from data.asm[37]}
+TWODROP: 0x000000000804B03C, defined in {line generated by data.asm[149] from data.asm[42]}
+name_TWODUP: 0x000000000804B040, defined in {line generated by data.asm[150] from data.asm[37]}
+TWODUP: 0x000000000804B04C, defined in {line generated by data.asm[150] from data.asm[42]}
+name_TWOSWAP: 0x000000000804B050, defined in {line generated by data.asm[151] from data.asm[37]}
+TWOSWAP: 0x000000000804B05C, defined in {line generated by data.asm[151] from data.asm[42]}
+name_NIP: 0x000000000804B060, defined in {line generated by data.asm[152] from data.asm[37]}
+NIP: 0x000000000804B068, defined in {line generated by data.asm[152] from data.asm[42]}
+name_TUCK: 0x000000000804B06C, defined in {line generated by data.asm[153] from data.asm[37]}
+TUCK: 0x000000000804B078, defined in {line generated by data.asm[153] from data.asm[42]}
+name_PICK: 0x000000000804B07C, defined in {line generated by data.asm[154] from data.asm[37]}
+PICK: 0x000000000804B088, defined in {line generated by data.asm[154] from data.asm[42]}
+name_QDUP: 0x000000000804B08C, defined in {line generated by data.asm[155] from data.asm[37]}
+QDUP: 0x000000000804B098, defined in {line generated by data.asm[155] from data.asm[42]}
+name_INCR: 0x000000000804B09C, defined in {line generated by data.asm[156] from data.asm[37]}
+name_DECR: 0x000000000804B0A8, defined in {line generated by data.asm[157] from data.asm[37]}
+DECR: 0x000000000804B0B0, defined in {line generated by data.asm[157] from data.asm[42]}
+name_INCR4: 0x000000000804B0B4, defined in {line generated by data.asm[158] from data.asm[37]}
+name_DECR4: 0x000000000804B0C0, defined in {line generated by data.asm[159] from data.asm[37]}
+DECR4: 0x000000000804B0C8, defined in {line generated by data.asm[159] from data.asm[42]}
+name__ADD: 0x000000000804B0CC, defined in {line generated by data.asm[160] from data.asm[37]}
+name__SUB: 0x000000000804B0D8, defined in {line generated by data.asm[161] from data.asm[37]}
+_SUB: 0x000000000804B0E0, defined in {line generated by data.asm[161] from data.asm[42]}
+name__MUL: 0x000000000804B0E4, defined in {line generated by data.asm[162] from data.asm[37]}
+_MUL: 0x000000000804B0EC, defined in {line generated by data.asm[162] from data.asm[42]}
+name__DIV: 0x000000000804B0F0, defined in {line generated by data.asm[163] from data.asm[37]}
+_DIV: 0x000000000804B0F8, defined in {line generated by data.asm[163] from data.asm[42]}
+name__MOD: 0x000000000804B0FC, defined in {line generated by data.asm[164] from data.asm[37]}
+_MOD: 0x000000000804B104, defined in {line generated by data.asm[164] from data.asm[42]}
+name_DIVMOD: 0x000000000804B108, defined in {line generated by data.asm[165] from data.asm[37]}
+DIVMOD: 0x000000000804B114, defined in {line generated by data.asm[165] from data.asm[42]}
+name_UDIV: 0x000000000804B118, defined in {line generated by data.asm[166] from data.asm[37]}
+UDIV: 0x000000000804B120, defined in {line generated by data.asm[166] from data.asm[42]}
+name_UMOD: 0x000000000804B124, defined in {line generated by data.asm[167] from data.asm[37]}
+UMOD: 0x000000000804B130, defined in {line generated by data.asm[167] from data.asm[42]}
+name_UDIVMOD: 0x000000000804B134, defined in {line generated by data.asm[168] from data.asm[37]}
+UDIVMOD: 0x000000000804B140, defined in {line generated by data.asm[168] from data.asm[42]}
+name__EQU: 0x000000000804B144, defined in {line generated by data.asm[169] from data.asm[37]}
+name_NEQU: 0x000000000804B150, defined in {line generated by data.asm[170] from data.asm[37]}
+NEQU: 0x000000000804B158, defined in {line generated by data.asm[170] from data.asm[42]}
+name_LT: 0x000000000804B15C, defined in {line generated by data.asm[171] from data.asm[37]}
+LT: 0x000000000804B164, defined in {line generated by data.asm[171] from data.asm[42]}
+name_GT: 0x000000000804B168, defined in {line generated by data.asm[172] from data.asm[37]}
+GT: 0x000000000804B170, defined in {line generated by data.asm[172] from data.asm[42]}
+name_LE: 0x000000000804B174, defined in {line generated by data.asm[173] from data.asm[37]}
+LE: 0x000000000804B17C, defined in {line generated by data.asm[173] from data.asm[42]}
+name_GE: 0x000000000804B180, defined in {line generated by data.asm[174] from data.asm[37]}
+name_ZEQU: 0x000000000804B18C, defined in {line generated by data.asm[175] from data.asm[37]}
+ZEQU: 0x000000000804B194, defined in {line generated by data.asm[175] from data.asm[42]}
+name_ZNEQU: 0x000000000804B198, defined in {line generated by data.asm[176] from data.asm[37]}
+ZNEQU: 0x000000000804B1A0, defined in {line generated by data.asm[176] from data.asm[42]}
+name_ZLT: 0x000000000804B1A4, defined in {line generated by data.asm[177] from data.asm[37]}
+ZLT: 0x000000000804B1AC, defined in {line generated by data.asm[177] from data.asm[42]}
+name_ZGT: 0x000000000804B1B0, defined in {line generated by data.asm[178] from data.asm[37]}
+ZGT: 0x000000000804B1B8, defined in {line generated by data.asm[178] from data.asm[42]}
+name_ZLE: 0x000000000804B1BC, defined in {line generated by data.asm[179] from data.asm[37]}
+ZLE: 0x000000000804B1C4, defined in {line generated by data.asm[179] from data.asm[42]}
+name_ZGE: 0x000000000804B1C8, defined in {line generated by data.asm[180] from data.asm[37]}
+ZGE: 0x000000000804B1D0, defined in {line generated by data.asm[180] from data.asm[42]}
+name__AND: 0x000000000804B1D4, defined in {line generated by data.asm[181] from data.asm[37]}
+_AND: 0x000000000804B1DC, defined in {line generated by data.asm[181] from data.asm[42]}
+name__OR: 0x000000000804B1E0, defined in {line generated by data.asm[182] from data.asm[37]}
+_OR: 0x000000000804B1E8, defined in {line generated by data.asm[182] from data.asm[42]}
+name__XOR: 0x000000000804B1EC, defined in {line generated by data.asm[183] from data.asm[37]}
+_XOR: 0x000000000804B1F4, defined in {line generated by data.asm[183] from data.asm[42]}
+name_INVERT: 0x000000000804B1F8, defined in {line generated by data.asm[184] from data.asm[37]}
+name_NEGATE: 0x000000000804B208, defined in {line generated by data.asm[185] from data.asm[37]}
+NEGATE: 0x000000000804B214, defined in {line generated by data.asm[185] from data.asm[42]}
+name__NOT: 0x000000000804B218, defined in {line generated by data.asm[186] from data.asm[37]}
+_NOT: 0x000000000804B220, defined in {line generated by data.asm[186] from data.asm[42]}
+name_TRUE: 0x000000000804B224, defined in {line generated by data.asm[187] from data.asm[37]}
+TRUE: 0x000000000804B230, defined in {line generated by data.asm[187] from data.asm[42]}
+name_FALSE: 0x000000000804B234, defined in {line generated by data.asm[188] from data.asm[37]}
+FALSE: 0x000000000804B240, defined in {line generated by data.asm[188] from data.asm[42]}
+name_LIT: 0x000000000804B244, defined in {line generated by data.asm[189] from data.asm[37]}
+name_STORE: 0x000000000804B250, defined in {line generated by data.asm[190] from data.asm[37]}
+name_FETCH: 0x000000000804B25C, defined in {line generated by data.asm[191] from data.asm[37]}
+name_ADDSTORE: 0x000000000804B268, defined in {line generated by data.asm[192] from data.asm[37]}
+ADDSTORE: 0x000000000804B270, defined in {line generated by data.asm[192] from data.asm[42]}
+name_SUBSTORE: 0x000000000804B274, defined in {line generated by data.asm[193] from data.asm[37]}
+SUBSTORE: 0x000000000804B27C, defined in {line generated by data.asm[193] from data.asm[42]}
+name_STOREBYTE: 0x000000000804B280, defined in {line generated by data.asm[194] from data.asm[37]}
+STOREBYTE: 0x000000000804B288, defined in {line generated by data.asm[194] from data.asm[42]}
+name_FETCHBYTE: 0x000000000804B28C, defined in {line generated by data.asm[195] from data.asm[37]}
+FETCHBYTE: 0x000000000804B294, defined in {line generated by data.asm[195] from data.asm[42]}
+name_CCOPY: 0x000000000804B298, defined in {line generated by data.asm[196] from data.asm[37]}
+CCOPY: 0x000000000804B2A4, defined in {line generated by data.asm[196] from data.asm[42]}
+name_CMOVE: 0x000000000804B2A8, defined in {line generated by data.asm[197] from data.asm[37]}
+undefined?2: 0x000000000804B2B4, defined in {line generated by data.asm[197] from data.asm[42]}
+name_CMOVED: 0x000000000804B2B8, defined in {line generated by data.asm[198] from data.asm[37]}
+CMOVED: 0x000000000804B2C4, defined in {line generated by data.asm[198] from data.asm[42]}
+name_STATE: 0x000000000804B2C8, defined in {line generated by data.asm[199] from data.asm[37]}
+STATE: 0x000000000804B2D4, defined in {line generated by data.asm[199] from data.asm[42]}
+name_DP: 0x000000000804B2D8, defined in {line generated by data.asm[200] from data.asm[37]}
+undefined?4: 0x000000000804B2E0, defined in {line generated by data.asm[200] from data.asm[42]}
+name_LATEST: 0x000000000804B2E4, defined in {line generated by data.asm[201] from data.asm[37]}
+LATEST: 0x000000000804B2F0, defined in {line generated by data.asm[201] from data.asm[42]}
+name_FDESC: 0x000000000804B2F4, defined in {line generated by data.asm[202] from data.asm[37]}
+FDESC: 0x000000000804B300, defined in {line generated by data.asm[202] from data.asm[42]}
+name_FBUFF: 0x000000000804B304, defined in {line generated by data.asm[203] from data.asm[37]}
+FBUFF: 0x000000000804B310, defined in {line generated by data.asm[203] from data.asm[42]}
+name_FSTAT: 0x000000000804B314, defined in {line generated by data.asm[204] from data.asm[37]}
+FSTAT: 0x000000000804B320, defined in {line generated by data.asm[204] from data.asm[42]}
+name_ASTAK: 0x000000000804B324, defined in {line generated by data.asm[205] from data.asm[37]}
+ASTAK: 0x000000000804B330, defined in {line generated by data.asm[205] from data.asm[42]}
+name_S0: 0x000000000804B334, defined in {line generated by data.asm[206] from data.asm[37]}
+S0: 0x000000000804B33C, defined in {line generated by data.asm[206] from data.asm[42]}
+name_BASE: 0x000000000804B340, defined in {line generated by data.asm[207] from data.asm[37]}
+name_VERSION: 0x000000000804B350, defined in {line generated by data.asm[208] from data.asm[37]}
+VERSION: 0x000000000804B35C, defined in {line generated by data.asm[208] from data.asm[42]}
+name_RZ: 0x000000000804B360, defined in {line generated by data.asm[209] from data.asm[37]}
+name___DOCOL: 0x000000000804B36C, defined in {line generated by data.asm[210] from data.asm[48]}
+__DOCOL: 0x000000000804B378, defined in {line generated by data.asm[210] from data.asm[53]}
+name___F_IMMED: 0x000000000804B37C, defined in {line generated by data.asm[211] from data.asm[37]}
+__F_IMMED: 0x000000000804B388, defined in {line generated by data.asm[211] from data.asm[42]}
+name___F_HIDDEN: 0x000000000804B38C, defined in {line generated by data.asm[212] from data.asm[37]}
+__F_HIDDEN: 0x000000000804B39C, defined in {line generated by data.asm[212] from data.asm[42]}
+name___F_LENMASK: 0x000000000804B3A0, defined in {line generated by data.asm[213] from data.asm[37]}
+__F_LENMASK: 0x000000000804B3B0, defined in {line generated by data.asm[213] from data.asm[42]}
+name_SYS_EXIT: 0x000000000804B3B4, defined in {line generated by data.asm[214] from data.asm[37]}
+SYS_EXIT: 0x000000000804B3C4, defined in {line generated by data.asm[214] from data.asm[42]}
+name_SYS_OPEN: 0x000000000804B3C8, defined in {line generated by data.asm[215] from data.asm[37]}
+SYS_OPEN: 0x000000000804B3D8, defined in {line generated by data.asm[215] from data.asm[42]}
+name_SYS_CLOSE: 0x000000000804B3DC, defined in {line generated by data.asm[216] from data.asm[37]}
+SYS_CLOSE: 0x000000000804B3EC, defined in {line generated by data.asm[216] from data.asm[42]}
+name_SYS_READ: 0x000000000804B3F0, defined in {line generated by data.asm[217] from data.asm[37]}
+SYS_READ: 0x000000000804B400, defined in {line generated by data.asm[217] from data.asm[42]}
+name_SYS_WRITE: 0x000000000804B404, defined in {line generated by data.asm[218] from data.asm[37]}
+SYS_WRITE: 0x000000000804B414, defined in {line generated by data.asm[218] from data.asm[42]}
+name_SYS_CREAT: 0x000000000804B418, defined in {line generated by data.asm[219] from data.asm[37]}
+SYS_CREAT: 0x000000000804B428, defined in {line generated by data.asm[219] from data.asm[42]}
+name_SYS_STAT: 0x000000000804B42C, defined in {line generated by data.asm[220] from data.asm[37]}
+SYS_STAT: 0x000000000804B43C, defined in {line generated by data.asm[220] from data.asm[42]}
+name_SYS_FSTAT: 0x000000000804B440, defined in {line generated by data.asm[221] from data.asm[37]}
+SYS_FSTAT: 0x000000000804B450, defined in {line generated by data.asm[221] from data.asm[42]}
+name_SYS_BRK: 0x000000000804B454, defined in {line generated by data.asm[222] from data.asm[37]}
+SYS_BRK: 0x000000000804B460, defined in {line generated by data.asm[222] from data.asm[42]}
+name_SYS_FORK: 0x000000000804B464, defined in {line generated by data.asm[223] from data.asm[37]}
+SYS_FORK: 0x000000000804B474, defined in {line generated by data.asm[223] from data.asm[42]}
+name_SYS_EXECVE: 0x000000000804B478, defined in {line generated by data.asm[224] from data.asm[37]}
+SYS_EXECVE: 0x000000000804B488, defined in {line generated by data.asm[224] from data.asm[42]}
+name___O_RDONLY: 0x000000000804B48C, defined in {line generated by data.asm[225] from data.asm[37]}
+__O_RDONLY: 0x000000000804B49C, defined in {line generated by data.asm[225] from data.asm[42]}
+name___O_WRONLY: 0x000000000804B4A0, defined in {line generated by data.asm[226] from data.asm[37]}
+__O_WRONLY: 0x000000000804B4B0, defined in {line generated by data.asm[226] from data.asm[42]}
+name___O_RDWR: 0x000000000804B4B4, defined in {line generated by data.asm[227] from data.asm[37]}
+__O_RDWR: 0x000000000804B4C0, defined in {line generated by data.asm[227] from data.asm[42]}
+name___O_CREAT: 0x000000000804B4C4, defined in {line generated by data.asm[228] from data.asm[37]}
+__O_CREAT: 0x000000000804B4D0, defined in {line generated by data.asm[228] from data.asm[42]}
+name___O_EXCL: 0x000000000804B4D4, defined in {line generated by data.asm[229] from data.asm[37]}
+__O_EXCL: 0x000000000804B4E0, defined in {line generated by data.asm[229] from data.asm[42]}
+name___O_TRUNC: 0x000000000804B4E4, defined in {line generated by data.asm[230] from data.asm[37]}
+__O_TRUNC: 0x000000000804B4F0, defined in {line generated by data.asm[230] from data.asm[42]}
+name___O_APPEND: 0x000000000804B4F4, defined in {line generated by data.asm[231] from data.asm[37]}
+__O_APPEND: 0x000000000804B504, defined in {line generated by data.asm[231] from data.asm[42]}
+name___O_NONBLOCK: 0x000000000804B508, defined in {line generated by data.asm[232] from data.asm[37]}
+__O_NONBLOCK: 0x000000000804B518, defined in {line generated by data.asm[232] from data.asm[42]}
+name_RTLDLOCAL: 0x000000000804B51C, defined in {line generated by data.asm[233] from data.asm[37]}
+RTLDLOCAL: 0x000000000804B52C, defined in {line generated by data.asm[233] from data.asm[42]}
+name_RTLDLAZY: 0x000000000804B530, defined in {line generated by data.asm[234] from data.asm[37]}
+RTLDLAZY: 0x000000000804B540, defined in {line generated by data.asm[234] from data.asm[42]}
+name_RTLDNOW: 0x000000000804B544, defined in {line generated by data.asm[235] from data.asm[37]}
+RTLDNOW: 0x000000000804B554, defined in {line generated by data.asm[235] from data.asm[42]}
+name_RTLDBINDMASK: 0x000000000804B558, defined in {line generated by data.asm[236] from data.asm[37]}
+RTLDBINDMASK: 0x000000000804B570, defined in {line generated by data.asm[236] from data.asm[42]}
+name_RTLDNOLOAD: 0x000000000804B574, defined in {line generated by data.asm[237] from data.asm[37]}
+RTLDNOLOAD: 0x000000000804B584, defined in {line generated by data.asm[237] from data.asm[42]}
+name_RTLDDEEPBIND: 0x000000000804B588, defined in {line generated by data.asm[238] from data.asm[37]}
+RTLDDEEPBIND: 0x000000000804B59C, defined in {line generated by data.asm[238] from data.asm[42]}
+name_RTLDGLOBAL: 0x000000000804B5A0, defined in {line generated by data.asm[239] from data.asm[37]}
+RTLDGLOBAL: 0x000000000804B5B0, defined in {line generated by data.asm[239] from data.asm[42]}
+name_RTLDNODELETE: 0x000000000804B5B4, defined in {line generated by data.asm[240] from data.asm[37]}
+RTLDNODELETE: 0x000000000804B5C8, defined in {line generated by data.asm[240] from data.asm[42]}
+name_DLOPEN: 0x000000000804B5CC, defined in {line generated by data.asm[241] from data.asm[37]}
+DLOPEN: 0x000000000804B5D8, defined in {line generated by data.asm[241] from data.asm[42]}
+name_DLSYM: 0x000000000804B5DC, defined in {line generated by data.asm[242] from data.asm[37]}
+DLSYM: 0x000000000804B5E8, defined in {line generated by data.asm[242] from data.asm[42]}
+name_DLERR: 0x000000000804B5EC, defined in {line generated by data.asm[243] from data.asm[37]}
+DLERR: 0x000000000804B5F8, defined in {line generated by data.asm[243] from data.asm[42]}
+name_DLCLOSE: 0x000000000804B5FC, defined in {line generated by data.asm[244] from data.asm[37]}
+DLCLOSE: 0x000000000804B608, defined in {line generated by data.asm[244] from data.asm[42]}
+name_DYNCALL: 0x000000000804B60C, defined in {line generated by data.asm[245] from data.asm[37]}
+DYNCALL: 0x000000000804B618, defined in {line generated by data.asm[245] from data.asm[42]}
+name_DLERROR: 0x000000000804B61C, defined in {line generated by data.asm[246] from data.asm[48]}
+DLERROR: 0x000000000804B628, defined in {line generated by data.asm[246] from data.asm[53]}
+name_TICK: 0x000000000804B638, defined in {line generated by data.asm[251] from data.asm[48]}
+TICK: 0x000000000804B640, defined in {line generated by data.asm[251] from data.asm[53]}
+PAREN_WORD: 0x000000000804C7D0, defined in {line generated by data.asm[756] from data.asm[42]}
+PAREN_FIND: 0x000000000804B80C, defined in {line generated by data.asm[291] from data.asm[42]}
+TCFA: 0x000000000804B81C, defined in {line generated by data.asm[292] from data.asm[42]}
+name_ARGC: 0x000000000804B654, defined in {line generated by data.asm[255] from data.asm[37]}
+name_ARGS: 0x000000000804B664, defined in {line generated by data.asm[256] from data.asm[37]}
+name_ENVC: 0x000000000804B674, defined in {line generated by data.asm[257] from data.asm[37]}
+ENVC: 0x000000000804B680, defined in {line generated by data.asm[257] from data.asm[42]}
+name_ENVS: 0x000000000804B684, defined in {line generated by data.asm[258] from data.asm[37]}
+ENVS: 0x000000000804B690, defined in {line generated by data.asm[258] from data.asm[42]}
+name_PAREN_EVAL: 0x000000000804B694, defined in {line generated by data.asm[259] from data.asm[37]}
+PAREN_EVAL: 0x000000000804B6A0, defined in {line generated by data.asm[259] from data.asm[42]}
+name__LF: 0x000000000804B6A4, defined in {line generated by data.asm[261] from data.asm[48]}
+_LF: 0x000000000804B6AC, defined in {line generated by data.asm[261] from data.asm[53]}
+name___CR: 0x000000000804B6BC, defined in {line generated by data.asm[264] from data.asm[48]}
+__CR: 0x000000000804B6C4, defined in {line generated by data.asm[264] from data.asm[53]}
+name_BLANK: 0x000000000804B6D4, defined in {line generated by data.asm[267] from data.asm[48]}
+BLANK: 0x000000000804B6DC, defined in {line generated by data.asm[267] from data.asm[53]}
+name__CR: 0x000000000804B6EC, defined in {line generated by data.asm[270] from data.asm[48]}
+EMIT: 0x000000000804C7E0, defined in {line generated by data.asm[757] from data.asm[42]}
+name_NEWL: 0x000000000804B708, defined in {line generated by data.asm[273] from data.asm[48]}
+NEWL: 0x000000000804B714, defined in {line generated by data.asm[273] from data.asm[53]}
+name_SPACE: 0x000000000804B734, defined in {line generated by data.asm[276] from data.asm[48]}
+SPACE: 0x000000000804B740, defined in {line generated by data.asm[276] from data.asm[53]}
+name_TOR: 0x000000000804B754, defined in {line generated by data.asm[279] from data.asm[37]}
+TOR: 0x000000000804B75C, defined in {line generated by data.asm[279] from data.asm[42]}
+name_FROMR: 0x000000000804B760, defined in {line generated by data.asm[280] from data.asm[37]}
+FROMR: 0x000000000804B768, defined in {line generated by data.asm[280] from data.asm[42]}
+name_RSPFETCH: 0x000000000804B76C, defined in {line generated by data.asm[281] from data.asm[37]}
+RSPFETCH: 0x000000000804B778, defined in {line generated by data.asm[281] from data.asm[42]}
+name_RSPSTORE: 0x000000000804B77C, defined in {line generated by data.asm[282] from data.asm[37]}
+name_RDROP: 0x000000000804B78C, defined in {line generated by data.asm[283] from data.asm[37]}
+RDROP: 0x000000000804B798, defined in {line generated by data.asm[283] from data.asm[42]}
+name_PSPFETCH: 0x000000000804B79C, defined in {line generated by data.asm[284] from data.asm[37]}
+PSPFETCH: 0x000000000804B7A8, defined in {line generated by data.asm[284] from data.asm[42]}
+name_PSPSTORE: 0x000000000804B7AC, defined in {line generated by data.asm[285] from data.asm[37]}
+PSPSTORE: 0x000000000804B7B8, defined in {line generated by data.asm[285] from data.asm[42]}
+name_ASPFROM: 0x000000000804B7BC, defined in {line generated by data.asm[286] from data.asm[37]}
+ASPFROM: 0x000000000804B7C4, defined in {line generated by data.asm[286] from data.asm[42]}
+name_ASPTO: 0x000000000804B7C8, defined in {line generated by data.asm[287] from data.asm[37]}
+ASPTO: 0x000000000804B7D0, defined in {line generated by data.asm[287] from data.asm[42]}
+name_PAREN_STDIN: 0x000000000804B7D4, defined in {line generated by data.asm[288] from data.asm[37]}
+PAREN_STDIN: 0x000000000804B7E0, defined in {line generated by data.asm[288] from data.asm[42]}
+name_KEY: 0x000000000804B7E4, defined in {line generated by data.asm[289] from data.asm[37]}
+KEY: 0x000000000804B7EC, defined in {line generated by data.asm[289] from data.asm[42]}
+name_NUMBER: 0x000000000804B7F0, defined in {line generated by data.asm[290] from data.asm[37]}
+NUMBER: 0x000000000804B7FC, defined in {line generated by data.asm[290] from data.asm[42]}
+name_PAREN_FIND: 0x000000000804B800, defined in {line generated by data.asm[291] from data.asm[37]}
+name_TCFA: 0x000000000804B810, defined in {line generated by data.asm[292] from data.asm[37]}
+name_FCFA: 0x000000000804B820, defined in {line generated by data.asm[294] from data.asm[48]}
+FCFA: 0x000000000804B82C, defined in {line generated by data.asm[294] from data.asm[53]}
+name_TDFA: 0x000000000804B87C, defined in {line generated by data.asm[310] from data.asm[48]}
+TDFA: 0x000000000804B888, defined in {line generated by data.asm[310] from data.asm[53]}
+name_COLNONAME: 0x000000000804B898, defined in {line generated by data.asm[316] from data.asm[48]}
+COLNONAME: 0x000000000804B8A4, defined in {line generated by data.asm[316] from data.asm[53]}
+HEADER_COMMA: 0x000000000804B8E0, defined in {line generated by data.asm[323] from data.asm[42]}
+HERE: 0x000000000804C7B0, defined in {line generated by data.asm[754] from data.asm[42]}
+COMMA: 0x000000000804B8EC, defined in {line generated by data.asm[324] from data.asm[42]}
+RBRAC: 0x000000000804B904, defined in {line generated by data.asm[326] from data.asm[42]}
+name_HEADER_COMMA: 0x000000000804B8D4, defined in {line generated by data.asm[323] from data.asm[37]}
+name_COMMA: 0x000000000804B8E4, defined in {line generated by data.asm[324] from data.asm[37]}
+name_LBRAC: 0x000000000804B8F0, defined in {line generated by data.asm[325] from data.asm[37]}
+LBRAC: 0x000000000804B8F8, defined in {line generated by data.asm[325] from data.asm[42]}
+name_RBRAC: 0x000000000804B8FC, defined in {line generated by data.asm[326] from data.asm[37]}
+name_COLON: 0x000000000804B908, defined in {line generated by data.asm[328] from data.asm[48]}
+COLON: 0x000000000804B910, defined in {line generated by data.asm[328] from data.asm[53]}
+HIDDEN: 0x000000000804B994, defined in {line generated by data.asm[348] from data.asm[42]}
+name_SEMICOLON: 0x000000000804B93C, defined in {line generated by data.asm[336] from data.asm[48]}
+SEMICOLON: 0x000000000804B944, defined in {line generated by data.asm[336] from data.asm[53]}
+name_HIDE: 0x000000000804B968, defined in {line generated by data.asm[342] from data.asm[48]}
+HIDE: 0x000000000804B974, defined in {line generated by data.asm[342] from data.asm[53]}
+name_HIDDEN: 0x000000000804B988, defined in {line generated by data.asm[348] from data.asm[37]}
+name_BRACKET_TICK: 0x000000000804B998, defined in {line generated by data.asm[349] from data.asm[37]}
+BRACKET_TICK: 0x000000000804B9A0, defined in {line generated by data.asm[349] from data.asm[42]}
+name_BRANCH: 0x000000000804B9A4, defined in {line generated by data.asm[350] from data.asm[37]}
+name_ZBRANCH: 0x000000000804B9B4, defined in {line generated by data.asm[351] from data.asm[37]}
+name_LITSTRING: 0x000000000804B9C4, defined in {line generated by data.asm[352] from data.asm[37]}
+LITSTRING: 0x000000000804B9D4, defined in {line generated by data.asm[352] from data.asm[42]}
+name_TYPE: 0x000000000804B9D8, defined in {line generated by data.asm[353] from data.asm[37]}
+name_LITERAL: 0x000000000804B9E8, defined in {line generated by data.asm[357] from data.asm[48]}
+LITERAL: 0x000000000804B9F4, defined in {line generated by data.asm[357] from data.asm[53]}
+name_STOREBYTE_INC: 0x000000000804BA0C, defined in {line generated by data.asm[362] from data.asm[48]}
+STOREBYTE_INC: 0x000000000804BA18, defined in {line generated by data.asm[362] from data.asm[53]}
+name_SQUOTE: 0x000000000804BA2C, defined in {line generated by data.asm[367] from data.asm[48]}
+SQUOTE: 0x000000000804BA34, defined in {line generated by data.asm[367] from data.asm[53]}
+BRACKET_STRING: 0x000000000804C590, defined in {line generated by data.asm[704] from data.asm[53]}
+name_DOTQUOTE: 0x000000000804BA9C, defined in {line generated by data.asm[385] from data.asm[48]}
+DOTQUOTE: 0x000000000804BAA4, defined in {line generated by data.asm[385] from data.asm[53]}
+name_QQUOTE: 0x000000000804BAFC, defined in {line generated by data.asm[401] from data.asm[48]}
+QQUOTE: 0x000000000804BB04, defined in {line generated by data.asm[401] from data.asm[53]}
+name_PQUOTE: 0x000000000804BB38, defined in {line generated by data.asm[408] from data.asm[48]}
+PQUOTE: 0x000000000804BB40, defined in {line generated by data.asm[408] from data.asm[53]}
+name_QUOTED: 0x000000000804BB54, defined in {line generated by data.asm[421] from data.asm[48]}
+QUOTED: 0x000000000804BB60, defined in {line generated by data.asm[421] from data.asm[53]}
+CHARCOMMA: 0x000000000804C50C, defined in {line generated by data.asm[687] from data.asm[42]}
+_ALIGN: 0x000000000804C568, defined in {line generated by data.asm[699] from data.asm[53]}
+name_ZQUOTE: 0x000000000804BC08, defined in {line generated by data.asm[438] from data.asm[48]}
+ZQUOTE: 0x000000000804BC10, defined in {line generated by data.asm[438] from data.asm[53]}
+name_CSTRING: 0x000000000804BCC8, defined in {line generated by data.asm[454] from data.asm[48]}
+CSTRING: 0x000000000804BCD4, defined in {line generated by data.asm[454] from data.asm[53]}
+name_STRLEN: 0x000000000804BD0C, defined in {line generated by data.asm[464] from data.asm[48]}
+name__if: 0x000000000804BD4C, defined in {line generated by data.asm[477] from data.asm[48]}
+_if: 0x000000000804BD54, defined in {line generated by data.asm[477] from data.asm[53]}
+name__else: 0x000000000804BD60, defined in {line generated by data.asm[481] from data.asm[48]}
+_else: 0x000000000804BD6C, defined in {line generated by data.asm[481] from data.asm[53]}
+EXECUTE: 0x000000000804BF3C, defined in {line generated by data.asm[530] from data.asm[42]}
+name_ARRAY: 0x000000000804BD98, defined in {line generated by data.asm[487] from data.asm[48]}
+ARRAY: 0x000000000804BDA4, defined in {line generated by data.asm[487] from data.asm[53]}
+CREATE: 0x000000000804BE34, defined in {line generated by data.asm[506] from data.asm[53]}
+ALLOT: 0x000000000804BE08, defined in {line generated by data.asm[498] from data.asm[53]}
+DOES: 0x000000000804BE68, defined in {line generated by data.asm[510] from data.asm[53]}
+name_STRMATCH: 0x000000000804BDC8, defined in {line generated by data.asm[494] from data.asm[37]}
+STRMATCH: 0x000000000804BDD8, defined in {line generated by data.asm[494] from data.asm[42]}
+name_STRIDX: 0x000000000804BDDC, defined in {line generated by data.asm[495] from data.asm[37]}
+STRIDX: 0x000000000804BDE8, defined in {line generated by data.asm[495] from data.asm[42]}
+name_STRCHR: 0x000000000804BDEC, defined in {line generated by data.asm[496] from data.asm[37]}
+STRCHR: 0x000000000804BDF8, defined in {line generated by data.asm[496] from data.asm[42]}
+name_ALLOT: 0x000000000804BDFC, defined in {line generated by data.asm[498] from data.asm[48]}
+name_CELLS: 0x000000000804BE18, defined in {line generated by data.asm[502] from data.asm[37]}
+name_CREATE: 0x000000000804BE28, defined in {line generated by data.asm[506] from data.asm[48]}
+name_DOES: 0x000000000804BE5C, defined in {line generated by data.asm[510] from data.asm[48]}
+name_TOBODY: 0x000000000804BE84, defined in {line generated by data.asm[514] from data.asm[48]}
+TOBODY: 0x000000000804BE90, defined in {line generated by data.asm[514] from data.asm[53]}
+name_VAR: 0x000000000804BEA0, defined in {line generated by data.asm[518] from data.asm[48]}
+VAR: 0x000000000804BEA8, defined in {line generated by data.asm[518] from data.asm[53]}
+name_CONSTANT: 0x000000000804BEDC, defined in {line generated by data.asm[524] from data.asm[48]}
+CONSTANT: 0x000000000804BEE8, defined in {line generated by data.asm[524] from data.asm[53]}
+name_BRACKET_WORD: 0x000000000804BF20, defined in {line generated by data.asm[529] from data.asm[37]}
+BRACKET_WORD: 0x000000000804BF2C, defined in {line generated by data.asm[529] from data.asm[42]}
+name_EXECUTE: 0x000000000804BF30, defined in {line generated by data.asm[530] from data.asm[37]}
+name_SYSCALL3: 0x000000000804BF40, defined in {line generated by data.asm[531] from data.asm[37]}
+SYSCALL3: 0x000000000804BF50, defined in {line generated by data.asm[531] from data.asm[42]}
+name_SYSCALL2: 0x000000000804BF54, defined in {line generated by data.asm[532] from data.asm[37]}
+SYSCALL2: 0x000000000804BF64, defined in {line generated by data.asm[532] from data.asm[42]}
+name_SYSCALL1: 0x000000000804BF68, defined in {line generated by data.asm[533] from data.asm[37]}
+SYSCALL1: 0x000000000804BF78, defined in {line generated by data.asm[533] from data.asm[42]}
+name_SYSCALL0: 0x000000000804BF7C, defined in {line generated by data.asm[534] from data.asm[37]}
+SYSCALL0: 0x000000000804BF8C, defined in {line generated by data.asm[534] from data.asm[42]}
+name_SHEBANG: 0x000000000804BF90, defined in {line generated by data.asm[535] from data.asm[37]}
+SHEBANG: 0x000000000804BF98, defined in {line generated by data.asm[535] from data.asm[42]}
+name_ENVQ: 0x000000000804BF9C, defined in {line generated by data.asm[536] from data.asm[37]}
+ENVQ: 0x000000000804BFA8, defined in {line generated by data.asm[536] from data.asm[42]}
+name_GETBRK: 0x000000000804BFAC, defined in {line generated by data.asm[537] from data.asm[37]}
+GETBRK: 0x000000000804BFB8, defined in {line generated by data.asm[537] from data.asm[42]}
+name_BRK: 0x000000000804BFBC, defined in {line generated by data.asm[538] from data.asm[37]}
+BRK: 0x000000000804BFC4, defined in {line generated by data.asm[538] from data.asm[42]}
+name_MORECORE: 0x000000000804BFC8, defined in {line generated by data.asm[539] from data.asm[37]}
+MORECORE: 0x000000000804BFD8, defined in {line generated by data.asm[539] from data.asm[42]}
+name_UNUSED: 0x000000000804BFDC, defined in {line generated by data.asm[540] from data.asm[37]}
+UNUSED: 0x000000000804BFE8, defined in {line generated by data.asm[540] from data.asm[42]}
+name_READONLY: 0x000000000804BFEC, defined in {line generated by data.asm[541] from data.asm[37]}
+READONLY: 0x000000000804BFF4, defined in {line generated by data.asm[541] from data.asm[42]}
+name_READWRITE: 0x000000000804BFF8, defined in {line generated by data.asm[542] from data.asm[37]}
+READWRITE: 0x000000000804C000, defined in {line generated by data.asm[542] from data.asm[42]}
+name_FOPEN: 0x000000000804C004, defined in {line generated by data.asm[545] from data.asm[48]}
+FOPEN: 0x000000000804C014, defined in {line generated by data.asm[545] from data.asm[53]}
+name_FCREAT: 0x000000000804C054, defined in {line generated by data.asm[558] from data.asm[48]}
+FCREAT: 0x000000000804C064, defined in {line generated by data.asm[558] from data.asm[53]}
+name_FCLOSE: 0x000000000804C0BC, defined in {line generated by data.asm[573] from data.asm[48]}
+FCLOSE: 0x000000000804C0CC, defined in {line generated by data.asm[573] from data.asm[53]}
+name_FREAD: 0x000000000804C0E0, defined in {line generated by data.asm[579] from data.asm[48]}
+FREAD: 0x000000000804C0F0, defined in {line generated by data.asm[579] from data.asm[53]}
+name_ERRMSG: 0x000000000804C100, defined in {line generated by data.asm[584] from data.asm[48]}
+ERRMSG: 0x000000000804C10C, defined in {line generated by data.asm[584] from data.asm[53]}
+ERRMSG.str: 0x000000000804C130, defined in data.asm[587]
+ERRMSG.strend: 0x000000000804C137, defined in data.asm[589]
+DOT: 0x000000000804C470, defined in {line generated by data.asm[671] from data.asm[53]}
+name_FLOAD: 0x000000000804C137, defined in {line generated by data.asm[595] from data.asm[48]}
+FLOAD: 0x000000000804C144, defined in {line generated by data.asm[595] from data.asm[53]}
+FLOAD.s1: 0x000000000804C320, defined in data.asm[628]
+FLOAD.s1e: 0x000000000804C329, defined in data.asm[629]
+FLOAD.s2: 0x000000000804C329, defined in data.asm[630]
+FLOAD.s2e: 0x000000000804C332, defined in data.asm[631]
+FLOAD.s3: 0x000000000804C332, defined in data.asm[632]
+FLOAD.s3e: 0x000000000804C33B, defined in data.asm[633]
+FLOAD.s4: 0x000000000804C33B, defined in data.asm[634]
+FLOAD.s4e: 0x000000000804C341, defined in data.asm[635]
+FLOAD.s5: 0x000000000804C341, defined in data.asm[636]
+FLOAD.s5e: 0x000000000804C34C, defined in data.asm[637]
+name_DBUG: 0x000000000804C34C, defined in {line generated by data.asm[639] from data.asm[48]}
+DBUG: 0x000000000804C354, defined in {line generated by data.asm[639] from data.asm[53]}
+DBUG.msg: 0x000000000804C370, defined in data.asm[641]
+DBUG.msgend: 0x000000000804C37A, defined in data.asm[642]
+name_EVAL: 0x000000000804C37A, defined in {line generated by data.asm[649] from data.asm[48]}
+EVAL: 0x000000000804C384, defined in {line generated by data.asm[649] from data.asm[53]}
+name__EVAL: 0x000000000804C390, defined in {line generated by data.asm[651] from data.asm[48]}
+_EVAL.str: 0x000000000804C3E8, defined in data.asm[659]
+_EVAL.strend: 0x000000000804C3FC, defined in data.asm[660]
+name_SPACES: 0x000000000804C3FC, defined in {line generated by data.asm[662] from data.asm[37]}
+SPACES: 0x000000000804C408, defined in {line generated by data.asm[662] from data.asm[42]}
+name_PAREN_UDOT: 0x000000000804C40C, defined in {line generated by data.asm[663] from data.asm[37]}
+PAREN_UDOT: 0x000000000804C418, defined in {line generated by data.asm[663] from data.asm[42]}
+name_UWIDTH: 0x000000000804C41C, defined in {line generated by data.asm[664] from data.asm[37]}
+UWIDTH: 0x000000000804C428, defined in {line generated by data.asm[664] from data.asm[42]}
+name_UDOTR: 0x000000000804C42C, defined in {line generated by data.asm[666] from data.asm[48]}
+UDOTR: 0x000000000804C434, defined in {line generated by data.asm[666] from data.asm[53]}
+name_DOTR: 0x000000000804C45C, defined in {line generated by data.asm[669] from data.asm[37]}
+DOTR: 0x000000000804C464, defined in {line generated by data.asm[669] from data.asm[42]}
+name_DOT: 0x000000000804C468, defined in {line generated by data.asm[671] from data.asm[48]}
+name_UDOT: 0x000000000804C488, defined in {line generated by data.asm[675] from data.asm[48]}
+name_FETCHDOT: 0x000000000804C4A0, defined in {line generated by data.asm[679] from data.asm[48]}
+FETCHDOT: 0x000000000804C4A8, defined in {line generated by data.asm[679] from data.asm[53]}
+name_WITHIN: 0x000000000804C4B8, defined in {line generated by data.asm[682] from data.asm[37]}
+WITHIN: 0x000000000804C4C4, defined in {line generated by data.asm[682] from data.asm[42]}
+name_DECIMAL: 0x000000000804C4C8, defined in {line generated by data.asm[683] from data.asm[37]}
+DECIMAL: 0x000000000804C4D4, defined in {line generated by data.asm[683] from data.asm[42]}
+name_HEX: 0x000000000804C4D8, defined in {line generated by data.asm[684] from data.asm[37]}
+name_DEPTH: 0x000000000804C4E4, defined in {line generated by data.asm[685] from data.asm[37]}
+name_ALIGNED: 0x000000000804C4F4, defined in {line generated by data.asm[686] from data.asm[37]}
+ALIGNED: 0x000000000804C500, defined in {line generated by data.asm[686] from data.asm[42]}
+name_CHARCOMMA: 0x000000000804C504, defined in {line generated by data.asm[687] from data.asm[37]}
+name_DOTESS: 0x000000000804C510, defined in {line generated by data.asm[690] from data.asm[48]}
+DOTESS: 0x000000000804C518, defined in {line generated by data.asm[690] from data.asm[53]}
+name__ALIGN: 0x000000000804C55C, defined in {line generated by data.asm[699] from data.asm[48]}
+name_BRACKET_STRING: 0x000000000804C580, defined in {line generated by data.asm[704] from data.asm[48]}
+name__IF: 0x000000000804C604, defined in {line generated by data.asm[714] from data.asm[37]}
+name__THEN: 0x000000000804C610, defined in {line generated by data.asm[715] from data.asm[37]}
+_THEN: 0x000000000804C61C, defined in {line generated by data.asm[715] from data.asm[42]}
+name__ELSE: 0x000000000804C620, defined in {line generated by data.asm[716] from data.asm[37]}
+_ELSE: 0x000000000804C62C, defined in {line generated by data.asm[716] from data.asm[42]}
+name_BEGIN: 0x000000000804C630, defined in {line generated by data.asm[717] from data.asm[37]}
+BEGIN: 0x000000000804C63C, defined in {line generated by data.asm[717] from data.asm[42]}
+name_UNTIL: 0x000000000804C640, defined in {line generated by data.asm[718] from data.asm[37]}
+UNTIL: 0x000000000804C64C, defined in {line generated by data.asm[718] from data.asm[42]}
+name_AGAIN: 0x000000000804C650, defined in {line generated by data.asm[719] from data.asm[37]}
+AGAIN: 0x000000000804C65C, defined in {line generated by data.asm[719] from data.asm[42]}
+name__WHILE: 0x000000000804C660, defined in {line generated by data.asm[720] from data.asm[37]}
+_WHILE: 0x000000000804C66C, defined in {line generated by data.asm[720] from data.asm[42]}
+name__REPEAT: 0x000000000804C670, defined in {line generated by data.asm[721] from data.asm[37]}
+_REPEAT: 0x000000000804C67C, defined in {line generated by data.asm[721] from data.asm[42]}
+name_UNLESS: 0x000000000804C680, defined in {line generated by data.asm[722] from data.asm[37]}
+UNLESS: 0x000000000804C68C, defined in {line generated by data.asm[722] from data.asm[42]}
+name_CASE: 0x000000000804C690, defined in {line generated by data.asm[724] from data.asm[37]}
+CASE: 0x000000000804C69C, defined in {line generated by data.asm[724] from data.asm[42]}
+name_OF: 0x000000000804C6A0, defined in {line generated by data.asm[727] from data.asm[48]}
+OF: 0x000000000804C6A8, defined in {line generated by data.asm[727] from data.asm[53]}
+name_ENDOF: 0x000000000804C6F0, defined in {line generated by data.asm[735] from data.asm[48]}
+ENDOF: 0x000000000804C6FC, defined in {line generated by data.asm[735] from data.asm[53]}
+name_ENDCASE: 0x000000000804C73C, defined in {line generated by data.asm[741] from data.asm[48]}
+ENDCASE: 0x000000000804C748, defined in {line generated by data.asm[741] from data.asm[53]}
+name_LPAREN: 0x000000000804C788, defined in {line generated by data.asm[750] from data.asm[37]}
+LPAREN: 0x000000000804C790, defined in {line generated by data.asm[750] from data.asm[42]}
+name_CHAR: 0x000000000804C794, defined in {line generated by data.asm[751] from data.asm[37]}
+CHAR: 0x000000000804C7A0, defined in {line generated by data.asm[751] from data.asm[42]}
+name_HERE: 0x000000000804C7A4, defined in {line generated by data.asm[754] from data.asm[37]}
+name_EXIT: 0x000000000804C7B4, defined in {line generated by data.asm[755] from data.asm[37]}
+name_PAREN_WORD: 0x000000000804C7C4, defined in {line generated by data.asm[756] from data.asm[37]}
+name_EMIT: 0x000000000804C7D4, defined in {line generated by data.asm[757] from data.asm[37]}
+name_DROP: 0x000000000804C7E4, defined in {line generated by data.asm[758] from data.asm[37]}
+name_IMMEDIATE: 0x000000000804C7F4, defined in {line generated by data.asm[759] from data.asm[37]}
+IMMEDIATE: 0x000000000804C804, defined in {line generated by data.asm[759] from data.asm[42]}
+name_SWAP: 0x000000000804C808, defined in {line generated by data.asm[760] from data.asm[37]}
+name_DUP: 0x000000000804C818, defined in {line generated by data.asm[761] from data.asm[37]}
+INIT: 0x000000000804D824, defined in data.asm[768]
+INIT.ebx: 0x000000000804D828, defined in data.asm[770]
+INIT.ecx: 0x000000000804D82C, defined in data.asm[771]
+INIT.edx: 0x000000000804D830, defined in data.asm[772]
+INIT.esi: 0x000000000804D838, defined in data.asm[774]
+INIT.esp: 0x000000000804D83C, defined in data.asm[775]
+INIT.ebp: 0x000000000804D840, defined in data.asm[776]
+INIT.eip: 0x000000000804D844, defined in data.asm[777]
+END_INIT: 0x000000000804D848, defined in data.asm[778]
+var_ARG2: 0x000000000804D850, defined in data.asm[782]
+var_ARG3: 0x000000000804D854, defined in data.asm[783]
+var_ARG4: 0x000000000804D858, defined in data.asm[784]
+var_ARG5: 0x000000000804D85C, defined in data.asm[785]
+var_ARG6: 0x000000000804D860, defined in data.asm[786]
+var_ARG7: 0x000000000804D864, defined in data.asm[787]
+alt_stack_top: 0x0000000008050080, defined in data.asm[829]
+ENDPROGRAM: 0x000000000804D938, defined in data.asm[820]
+return_stack: 0x000000000804F000, defined in data.asm[825]
+alt_stack: 0x0000000008050000, defined in data.asm[828]

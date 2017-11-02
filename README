@@ -1,0 +1,48 @@
+flow forth version 0.3.0 (20-DEC-2014)
+by Steven G. Messervey 
+based on JONESFORTH by Richard WM Jones
+(http://rwmj.wordpress.com/2010/08/07/jonesforth-git-repository/)
+(http://git.annexia.org/?p=jonesforth.git;a=summary)
+
+Mr. Jones has graciously put his code in the public domain, as do I:
+PUBLIC DOMAIN -----------------------------------------------------------------
+I, the copyright holder of this work, hereby release it into the public domain.
+This applies worldwide. In case this is not legally possible, I grant any 
+entity the right to use this work for any purpose, without any conditions,
+unless such conditions are required by law.
+-------------------------------------------------------------------------------
+
+Requirements:
+  * computer with an i386 or better 32-bit microprocessor
+	* Linux kernel 2.4,2.6, or 3.x (I prefer the Debian distribution & userland)
+	* A shell
+	* flat assembler (fasm) (flatassembler.net)
+	* some understanding of intel x86 assembler and forth
+
+Extras:
+	* a text editor (I prefer vim)
+	* a C compiler capable of producing elf shared objects (gcc)
+
+Building:
+'fasm core.asm flow'
+gcc -fpic -shared -o libhello.so hello.c
+
+Examples:
+There are two example forth source files: debug.4th and dyn.4th
+'debug' has some debugging words, like SEE for viewing the source of
+non-primitives, and DUMP for dumping memory contents.
+'dyn' shows how to use the dynamic link-loading facilty, opening the
+shared object 'libhello.so', linking the function 'hello', and finally
+calling the function 'hello'. 'man dlopen' or use a search engine for
+more information on dynamic-link loading under Linux.
+
+Notes:
+The include file 'unistd-26.inc' will work with version 3.x kernels.
+The code is in a very chaotic state.
+A lot of things are commented out; you may find them useful.
+A half-hearted attempt at DPANS94 compatiblity was abandoned.
+
+Happy Hacking!
+
+Steven G. Messervey / nuke48386@yahoo.com / 20-DEC-2014
+
